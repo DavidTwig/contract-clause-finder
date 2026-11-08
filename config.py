@@ -15,6 +15,22 @@ TEMPERATURE = 0.1
 # GPT-OSS is a reasoning model. "low" keeps hidden reasoning (which still counts
 # towards token limits) as small as possible.
 REASONING_EFFORT = "low"
+MAX_COMPLETION_TOKENS = 4_096   # upper bound per reply (reasoning + answer)
+
+# --- Prompts (files in prompts/). Bump the version whenever a prompt changes.
+FIRST_PASS_PROMPT = "first_pass_v1"
+
+# --- Rate limits (Groq's published limits for openai/gpt-oss-120b) ---------
+TOKENS_PER_MINUTE = 8_000
+REQUESTS_PER_MINUTE = 30
+TOKENS_PER_DAY = 200_000
+REPLY_TOKENS_ESTIMATE = 1_500   # used by the throttle before a call, when the real size is unknown
+MAX_RETRY_WAIT_SECONDS = 120    # a longer retry-after means the daily limit: stop instead of waiting
+
+# --- Splitting -------------------------------------------------------------
+CHARS_PER_TOKEN = 4          # rough estimate, as in the spec
+MAX_CHUNK_TOKENS = 3_000
+OVERLAP_TOKENS = 200
 
 # --- Clause types (exact CUAD category names) -------------------------------
 CATEGORIES = [

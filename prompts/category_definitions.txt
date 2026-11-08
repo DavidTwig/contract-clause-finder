@@ -1,0 +1,18 @@
+# Category definitions, shared by the first and second pass.
+# Wording is CUAD's own (from the CUAD-QA question "Details"), with broken characters fixed.
+# Format: a line "## <exact category name>" followed by its definition. Lines starting with # are comments.
+
+## Change of Control
+Does one party have the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?
+
+## Termination for Convenience
+Can a party terminate this contract without cause (solely by giving a notice and allowing a waiting period to expire)?
+
+## Cap on Liability
+Does the contract include a cap on liability upon the breach of a party's obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery.
+
+## Anti-Assignment
+Is consent or notice required of a party if the contract is assigned to a third party?
+
+## Governing Law
+Which state/country's law governs the interpretation of the contract?

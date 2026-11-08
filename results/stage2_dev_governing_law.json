@@ -1,0 +1,409 @@
+{
+ "summary": {
+  "category": "Governing Law",
+  "model": "openai/gpt-oss-120b",
+  "prompt_version": "first_pass_v1",
+  "contracts": 5,
+  "contracts_with_gold": 4,
+  "contracts_with_passed_finding": 4,
+  "contracts_with_gold_and_passed_finding": 4,
+  "chunks": 12,
+  "invalid_responses": 0,
+  "findings_total": 4,
+  "findings_by_status": {
+   "passed": 4,
+   "failed_quote": 0,
+   "wrong_category": 0
+  },
+  "overlap_duplicates": 0,
+  "unique_passed_findings": 4,
+  "unique_passed_with_gold_jaccard_ge_0.5": 3,
+  "gold_spans": 4,
+  "retries_for_invalid_json": 0,
+  "tokens_this_run_uncached": {
+   "prompt_tokens": 0,
+   "completion_tokens": 0,
+   "reasoning_tokens": 0,
+   "total_tokens": 0
+  },
+  "tokens_all_calls_incl_cached": {
+   "prompt_tokens": 26332,
+   "completion_tokens": 1522,
+   "reasoning_tokens": 917,
+   "total_tokens": 27854
+  },
+  "api_calls_this_run": 0,
+  "note": "best_gold_jaccard is an informal character-offset Jaccard; Stage 4 defines the metric."
+ },
+ "contracts": [
+  {
+   "title": "BLACKBOXSTOCKSINC_08_05_2014-EX-10.1-DISTRIBUTOR AGREEMENT",
+   "chars": 17234,
+   "gold": [
+    {
+     "start": 15546,
+     "end": 15613,
+     "text": "This Agreement shall be governed by the laws of the State of Texas."
+    }
+   ],
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 10283,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:18:24+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 2525,
+      "completion_tokens": 47,
+      "reasoning_tokens": 32,
+      "total_tokens": 2572
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 9214,
+     "end": 17234,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:18:25+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 2028,
+      "completion_tokens": 104,
+      "reasoning_tokens": 54,
+      "total_tokens": 2132
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "quote": "This Agreement shall be governed by the laws of the State of Texas.",
+     "reason": "Specifies the governing law for the contract.",
+     "status": "passed",
+     "start": 15546,
+     "end": 15613,
+     "best_gold_jaccard": 1.0,
+     "duplicate_of_chunk": null
+    }
+   ],
+   "errors": []
+  },
+  {
+   "title": "BLACKROCKMUNIHOLDINGSINVESTMENTQUALITYFUND_04_07_2020-EX-99.01-JOINT FILING AGREEMENT",
+   "chars": 1283,
+   "gold": [],
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 1283,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:18:25+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 723,
+      "completion_tokens": 24,
+      "reasoning_tokens": 9,
+      "total_tokens": 747
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "findings": [],
+   "errors": []
+  },
+  {
+   "title": "HertzGroupRealtyTrustInc_20190920_S-11A_EX-10.8_11816941_EX-10.8_Trademark License Agreement",
+   "chars": 14313,
+   "gold": [
+    {
+     "start": 10467,
+     "end": 10693,
+     "text": "The provisions of this Agreement shall be governed by and construed in accordance with the laws of the State of California (excluding any conflict of law rule or principle that would refer to the laws of another jurisdiction)."
+    }
+   ],
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 11751,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:19:26+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 3014,
+      "completion_tokens": 518,
+      "reasoning_tokens": 273,
+      "total_tokens": 3532
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 10694,
+     "end": 14313,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:19:26+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1257,
+      "completion_tokens": 42,
+      "reasoning_tokens": 27,
+      "total_tokens": 1299
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "quote": "The provisions of this Agreement shall be governed by and construed in accordance with the laws of the State of California (excluding any conflict of law rule or principle that would refer to the laws of another jurisdiction). Each Party hereto irrevocably submits to the jurisdiction of the state and federal courts located in California, in any action or proceeding arising out of or relating to this Agreement, and each Party hereby irrevocably agrees that all claims in respect of any such action or proceeding must be brought and/or defended in any such court; provided, however, that matters which are under the exclusive jurisdiction of the federal courts shall be brought in the Federal District Court for the Central District of California. Each Party hereto consents to service of process by any means authorized by the applicable law of the forum in any action brought under or arising out of this Agreement, and each Party irrevocably waives, to the fullest extent each may effectively do so, the defense of an inconvenient forum to the maintenance of such action or proceeding in any such court.",
+     "reason": "Specifies the governing law and jurisdiction for the contract.",
+     "status": "passed",
+     "start": 10467,
+     "end": 11575,
+     "best_gold_jaccard": 0.204,
+     "duplicate_of_chunk": null
+    }
+   ],
+   "errors": []
+  },
+  {
+   "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+   "chars": 34461,
+   "gold": [
+    {
+     "start": 32817,
+     "end": 32974,
+     "text": "This Agreement shall be governed by and construed pursuant to the laws of the State of Indiana, U.S.A., without reference to principals of conflicts of laws."
+    }
+   ],
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 7359,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:20:27+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1933,
+      "completion_tokens": 46,
+      "reasoning_tokens": 31,
+      "total_tokens": 1979
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 6527,
+     "end": 17483,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:20:27+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 2681,
+      "completion_tokens": 38,
+      "reasoning_tokens": 23,
+      "total_tokens": 2719
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 16514,
+     "end": 28318,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:21:28+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 2872,
+      "completion_tokens": 46,
+      "reasoning_tokens": 31,
+      "total_tokens": 2918
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 3,
+     "start": 27505,
+     "end": 34461,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:21:28+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1824,
+      "completion_tokens": 125,
+      "reasoning_tokens": 57,
+      "total_tokens": 1949
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 3,
+     "category": "Governing Law",
+     "quote": "This Agreement shall be governed by and construed pursuant to the laws of the State of Indiana, U.S.A., without reference to principals of conflicts of laws.",
+     "reason": "Specifies the governing law jurisdiction for the contract.",
+     "status": "passed",
+     "start": 32817,
+     "end": 32974,
+     "best_gold_jaccard": 1.0,
+     "duplicate_of_chunk": null
+    }
+   ],
+   "errors": []
+  },
+  {
+   "title": "WARNERCHILCOTTPLC_12_31_2003-EX-4.36-DEVELOPMENT AGREEMENT",
+   "chars": 29683,
+   "gold": [
+    {
+     "start": 25981,
+     "end": 26307,
+     "text": "THIS AGREEMENT SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE INTERNAL LAWS OF THE STATE OF NEW YORK APPLICABLE TO AGREEMENTS MADE AND TO BE PERFORMED ENTIRELY WITHIN SUCH STATE, WITHOUT REGARD TO THE CONFLICTS OF LAW PRINCIPLES OF SUCH STATE OTHER THAN SECTIONS 5-1401 OF THE NEW YORK GENERAL\n\n\n\n\n\nOBLIGATIONS LAW."
+    }
+   ],
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 11305,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:22:28+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 2752,
+      "completion_tokens": 39,
+      "reasoning_tokens": 24,
+      "total_tokens": 2791
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 10502,
+     "end": 22287,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:22:29+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 2662,
+      "completion_tokens": 61,
+      "reasoning_tokens": 46,
+      "total_tokens": 2723
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 21426,
+     "end": 29683,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-08T19:23:30+00:00",
+      "date": "2026-11-08",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 2061,
+      "completion_tokens": 432,
+      "reasoning_tokens": 310,
+      "total_tokens": 2493
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 2,
+     "category": "Governing Law",
+     "quote": "THIS AGREEMENT SHALL BE GOVERNED BY AND CONSTRUED IN ACCORDANCE WITH THE INTERNAL LAWS OF THE STATE OF NEW YORK APPLICABLE TO AGREEMENTS MADE AND TO BE PERFORMED ENTIRELY WITHIN SUCH STATE, WITHOUT REGARD TO THE CONFLICTS OF LAW PRINCIPLES OF SUCH STATE OTHER THAN SECTIONS 5-1401 OF THE NEW YORK GENERAL OBLIGATIONS LAW.",
+     "reason": "The clause explicitly states which state law governs the agreement.",
+     "status": "passed",
+     "start": 25981,
+     "end": 26307,
+     "best_gold_jaccard": 1.0,
+     "duplicate_of_chunk": null
+    }
+   ],
+   "errors": []
+  }
+ ]
+}
