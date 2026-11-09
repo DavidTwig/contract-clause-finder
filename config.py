@@ -18,7 +18,14 @@ REASONING_EFFORT = "low"
 MAX_COMPLETION_TOKENS = 4_096   # upper bound per reply (reasoning + answer)
 
 # --- Prompts (files in prompts/). Bump the version whenever a prompt changes.
-FIRST_PASS_PROMPT = "first_pass_v1"
+# History: first_pass_v1 used category_definitions_v1 (Stage 2).
+#          first_pass_v2 = same text as v1, with category_definitions_v2 (Governing Law quote rule).
+#          category_definitions_v3 = v2 wording with the quote rule split out as "Quote guidance"
+#          (first pass only). first_pass_v2 renders byte-identically from v2 and v3 (tested).
+FIRST_PASS_PROMPT = "first_pass_v2"
+SECOND_PASS_PROMPT = "second_pass_v1"
+DEFINITIONS = "category_definitions_v3"
+SECTION_MAX_SIDE_CHARS = 1_500  # second pass: at most this much context either side of the quote
 
 # --- Rate limits (Groq's published limits for openai/gpt-oss-120b) ---------
 TOKENS_PER_MINUTE = 8_000

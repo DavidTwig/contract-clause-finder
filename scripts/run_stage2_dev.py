@@ -4,6 +4,11 @@ Run:  .venv/Scripts/python scripts/run_stage2_dev.py
 Writes results/stage2_dev_governing_law.json and .csv. Re-runs use the cache and cost nothing.
 
 The span overlap here is an informal, character-based Jaccard. Stage 4 defines the real metric.
+
+NOTE: this script NO LONGER REPRODUCES the committed Stage 2 results. It uses the current prompt
+settings in config.py (Stage 2 used first_pass_v1 + category_definitions_v1), so rerunning it makes
+new API calls with newer prompts. The Stage 2 results in results/stage2_dev_governing_law.* stand as
+recorded; to reproduce them, set FIRST_PASS_PROMPT="first_pass_v1" and DEFINITIONS="category_definitions_v1".
 """
 
 import csv

@@ -7,35 +7,60 @@ import llm
 from quote_check import check_quote
 from splitter import split_text
 
-_DELIMITER_RE = re.compile(r"</?\s*contract_text\s*>", re.IGNORECASE)
+_GUIDANCE_PREFIX = "Quote guidance:"
 
 
-def load_definitions() -> dict[str, str]:
-    """Parse prompts/category_definitions.txt into {category: definition}."""
+def _parse_definitions(name: str) -> tuple[dict[str, str], dict[str, str]]:
+    """Parse prompts/<name>.txt into ({category: definition}, {category: quote guidance})."""
     defs: dict[str, str] = {}
+    guidance: dict[str, str] = {}
     current = None
-    for line in (config.PROMPTS_DIR / "category_definitions.txt").read_text(encoding="utf-8").splitlines():
+    for line in (config.PROMPTS_DIR / f"{name}.txt").read_text(encoding="utf-8").splitlines():
         if line.startswith("## "):
             current = line[3:].strip()
             defs[current] = ""
-        elif line.startswith("#") or not line.strip():
+        elif line.startswith("#") or not line.strip() or current is None:
             continue
-        elif current:
+        elif line.startswith(_GUIDANCE_PREFIX):
+            guidance[current] = line[len(_GUIDANCE_PREFIX):].strip()
+        else:
             defs[current] = (defs[current] + " " + line.strip()).strip()
     missing = set(config.CATEGORIES) - set(defs)
     if missing:
         raise ValueError(f"No definition for: {sorted(missing)}")
-    return defs
+    return defs, guidance
+
+
+def load_definitions(name: str = config.DEFINITIONS) -> dict[str, str]:
+    """{category: definition}. Used by BOTH passes. Never includes quote guidance."""
+    return _parse_definitions(name)[0]
+
+
+def load_quote_guidance(name: str = config.DEFINITIONS) -> dict[str, str]:
+    """{category: quote guidance}, for the FIRST PASS ONLY. Categories without guidance are absent."""
+    return _parse_definitions(name)[1]
+
+
+def neutralise_tags(text: str, tags: tuple[str, ...]) -> tuple[str, int]:
+    """Replace any opening or closing <tag> (any case, stray spaces) so contract text
+    cannot close or reopen the wrappers around it. Returns (safe_text, count)."""
+    pattern = re.compile(r"<\s*/?\s*(" + "|".join(map(re.escape, tags)) + r")\s*>", re.IGNORECASE)
+    return pattern.subn(lambda m: f"[{m.group(1).lower()} tag removed]", text)
 
 
 def neutralise_delimiters(text: str) -> tuple[str, int]:
-    """Stop contract text from closing or reopening our <contract_text> wrapper."""
-    return _DELIMITER_RE.subn("[contract_text tag removed]", text)
+    """First pass: stop contract text from closing or reopening the <contract_text> wrapper."""
+    return neutralise_tags(text, ("contract_text",))
+
+
+def render_definitions(categories: list[str], name: str = config.DEFINITIONS) -> str:
+    """First-pass definitions block: 'Category: definition [quote guidance]' per line."""
+    defs, guidance = _parse_definitions(name)
+    return "\n".join(f"{c}: {defs[c]}" + (f" {guidance[c]}" if c in guidance else "") for c in categories)
 
 
 def build_messages(chunk_text: str, categories: list[str]) -> list[dict]:
-    defs = load_definitions()
-    definitions = "\n".join(f"{c}: {defs[c]}" for c in categories)
+    definitions = render_definitions(categories)
     system = (config.PROMPTS_DIR / f"{config.FIRST_PASS_PROMPT}_system.txt").read_text(encoding="utf-8")
     user = (config.PROMPTS_DIR / f"{config.FIRST_PASS_PROMPT}_user.txt").read_text(encoding="utf-8")
     safe_text, _ = neutralise_delimiters(chunk_text)
@@ -58,12 +83,20 @@ def validate_findings(data) -> None:
                 raise ValueError(f'finding is missing text field "{field}"')
 
 
+def normalise_category(name: str, categories: list[str]) -> str | None:
+    """Match the model's category name to one we asked for, ignoring case and outer spaces only."""
+    lookup = {c.lower(): c for c in categories}
+    return lookup.get(name.strip().lower())
+
+
 def run_first_pass(text: str, categories: list[str]) -> dict:
     """Run the first pass and quote check over one contract.
 
     Returns {"chunks": [...], "findings": [...], "errors": [...]}. Each finding has
     status "passed" (quote found, offsets in the original contract), "failed_quote",
     or "wrong_category" (a category we did not ask about). Only "passed" can be shown.
+    A chunk whose call fails or returns invalid output has status "failed" in "chunks".
+    llm.DailyLimitReached is not caught: the caller must stop the run.
     """
     chunks = split_text(text)
     findings, errors, chunk_log = [], [], []
@@ -72,19 +105,20 @@ def run_first_pass(text: str, categories: list[str]) -> dict:
         try:
             reply = llm.chat_json(build_messages(chunk["text"], categories),
                                   config.FIRST_PASS_PROMPT, validate_findings)
-        except llm.InvalidResponse as e:
-            errors.append({"chunk": chunk["index"], "error": str(e)})
+        except (llm.InvalidResponse, llm.CallFailed) as e:
+            errors.append({"chunk": chunk["index"], "error": f"{type(e).__name__}: {e}"})
             chunk_log.append({"index": chunk["index"], "start": chunk["start"], "end": chunk["end"],
-                              "status": "invalid_response", "delimiters_removed": n_tags})
+                              "status": "failed", "delimiters_removed": n_tags})
             continue
         chunk_log.append({"index": chunk["index"], "start": chunk["start"], "end": chunk["end"],
                           "status": "ok", "cached": reply["cached"], "attempts": reply["attempts"],
                           "usage": reply["usage"], "n_findings": len(reply["data"]["findings"]),
                           "delimiters_removed": n_tags})
         for item in reply["data"]["findings"]:
-            record = {"chunk": chunk["index"], "category": item["category"],
-                      "quote": item["quote"], "reason": item["reason"]}
-            if item["category"] not in categories:
+            category = normalise_category(item["category"], categories)
+            record = {"chunk": chunk["index"], "category": category or item["category"],
+                      "model_category": item["category"], "quote": item["quote"], "reason": item["reason"]}
+            if category is None:
                 record.update(status="wrong_category", start=None, end=None)
             else:
                 check = check_quote(item["quote"], chunk["text"], chunk["start"])

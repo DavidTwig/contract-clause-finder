@@ -1,0 +1,3 @@
+<contract_text>
+{chunk_text}
+</contract_text>

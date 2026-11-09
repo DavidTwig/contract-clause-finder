@@ -1,0 +1,7 @@
+<quote>
+{quote}
+</quote>
+
+<contract_section>
+{section}
+</contract_section>

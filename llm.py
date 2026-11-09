@@ -11,7 +11,7 @@ import time
 from collections import deque
 
 from dotenv import load_dotenv
-from groq import BadRequestError, Groq, RateLimitError
+from groq import APIConnectionError, BadRequestError, Groq, InternalServerError, RateLimitError
 
 import config
 
@@ -26,6 +26,11 @@ class DailyLimitReached(RuntimeError):
 
 class InvalidResponse(RuntimeError):
     """The model's reply was not valid JSON of the expected shape, even after one retry."""
+
+
+class CallFailed(RuntimeError):
+    """The API call itself failed (connection or server error). Not cached, so a rerun retries it.
+    Authentication and other setup errors are NOT converted: they stop the run."""
 
 
 _client = None
@@ -109,6 +114,9 @@ def _call_once(messages: list[dict], params: dict, estimated_tokens: int):
                 raise DailyLimitReached(f"retry-after {retry_after:.0f}s; tokens today {tokens_today():,}") from e
             time.sleep(retry_after + 1)
             continue
+        except (APIConnectionError, InternalServerError) as e:
+            print(f"    call failed: {type(e).__name__}")
+            raise CallFailed(f"{type(e).__name__}: {str(e)[:200]}") from e
         _recent.append((time.monotonic(), response.usage.total_tokens))
         return response
     raise RuntimeError("Still rate limited after 10 attempts")
