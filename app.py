@@ -26,6 +26,9 @@ CONTEXT_CHARS = 800  # contract text shown either side of a quote
 # Status is always shown as words; the colour only repeats it.
 STATUS_TEXT = {VERIFIED: "Verified", NEEDS_REVIEW: "Needs review", NOT_FOUND: "Not found: check"}
 STATUS_COLOUR = {VERIFIED: "#d8eedc", NEEDS_REVIEW: "#fbe7b5", NOT_FOUND: "#e4e4e4"}
+# Badge text is #111 (about 15:1 on these colours). The pale fills alone are faint on white
+# (about 1.2:1), so each badge also has a darker border, at least 5:1 on white.
+STATUS_BORDER = {VERIFIED: "#2e7d32", NEEDS_REVIEW: "#8a6100", NOT_FOUND: "#5f5f5f"}
 STATUS_ORDER = {NEEDS_REVIEW: 0, NOT_FOUND: 1, VERIFIED: 2}
 SAMPLE_LABEL = "Trademark License Agreement (public filing, from the CUAD dataset)"
 SAMPLE_SOURCE = "From the public CUAD dataset (CC BY 4.0). This is a saved result, so no AI call is made."
@@ -116,8 +119,10 @@ def context_html(text: str, start: int, end: int, side: int = CONTEXT_CHARS) -> 
     s, e = max(0, start - side), min(len(text), end + side)
     before, quote, after = (html.escape(text[s:start]), html.escape(text[start:end]), html.escape(text[end:e]))
     return ('<div style="white-space: pre-wrap; font-family: Georgia, serif; line-height: 1.5; '
-            'border: 1px solid #ccc; padding: 0.75em; max-height: 28em; overflow-y: auto;">'
-            f'{"…" if s > 0 else ""}{before}<mark style="background:#ffe066;">{quote}</mark>'
+            'color: #111; background: #fff; border: 1px solid #767676; padding: 0.75em; '
+            'max-height: 28em; overflow-y: auto;">'
+            f'{"…" if s > 0 else ""}{before}<mark style="background:#ffe066; color:#111; '
+            f'border-bottom: 2px solid #8a6100;">{quote}</mark>'
             f'{after}{"…" if e < len(text) else ""}</div>')
 
 
@@ -220,6 +225,7 @@ def _cell(value: str) -> str:
 
 def _badge(status: str) -> str:
     return (f'<span style="background:{STATUS_COLOUR[status]}; color:#111; padding:2px 8px; '
+            f'border:1px solid {STATUS_BORDER[status]}; '
             f'border-radius:4px; font-weight:600; white-space:nowrap;">{STATUS_TEXT[status]}</span>')
 
 

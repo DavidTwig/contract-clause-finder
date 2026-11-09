@@ -131,7 +131,20 @@ def test_context_is_escaped_and_highlighted():
     s = text.index("Texas")
     out = app.context_html(text, s, s + len("Texas law governs."))
     assert "<script>" not in out and "&lt;script&gt;" in out
-    assert '<mark style="background:#ffe066;">Texas law governs.</mark>' in out
+    assert ('<mark style="background:#ffe066; color:#111; border-bottom: 2px solid #8a6100;">'
+            'Texas law governs.</mark>') in out
+
+
+def test_light_theme_config():
+    import tomllib
+    theme = tomllib.loads((config.ROOT / ".streamlit" / "config.toml").read_text(encoding="utf-8"))["theme"]
+    assert theme["base"] == "light"
+
+
+def test_badges_have_a_visible_border():
+    for status in (VERIFIED, NEEDS_REVIEW, NOT_FOUND):
+        badge = app._badge(status)
+        assert f"border:1px solid {app.STATUS_BORDER[status]}" in badge and "color:#111" in badge
 
 
 # --- running an upload: limits and progress --------------------------------------------------
