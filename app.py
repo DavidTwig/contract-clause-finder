@@ -230,6 +230,29 @@ def _badge(status: str) -> str:
 
 
 COLUMN_WIDTHS = [2, 1.6, 5, 3.4, 1.4]
+COLUMN_LABELS = ["Clause type", "Status", "Exact wording", "Why"]
+
+# Makes the header and rows read as one table. Header and rows are separate bordered containers
+# with the same column widths, so the header lines up with the columns; these rules shade the
+# header, remove the corner rounding between them and overlap their borders by 1px so each line
+# is single. Streamlit stacks columns at 640px and below: there the header row is hidden and each
+# cell shows its own label instead.
+TABLE_CSS = """<style>
+div[class*="st-key-reshead_"] { background: #eef0f3; border-radius: 0.5rem 0.5rem 0 0 !important; }
+div[class*="st-key-reshead_"] .cc-head { font-weight: 700; color: #111; }
+div[class*="st-key-resrow_"] { border-radius: 0 !important; margin-top: -1px; }
+div[class*="st-key-reslast_"] { border-radius: 0 0 0.5rem 0.5rem !important; margin-top: -1px; }
+.cc-label { display: none; }
+@media (max-width: 640px) {
+  div[class*="st-key-reshead_"] { display: none; }
+  .cc-label { display: block; font-size: 0.8rem; font-weight: 700; color: #333; margin-bottom: 0.1rem; }
+}
+</style>"""
+
+
+def _labelled(label: str, inner_html: str) -> str:
+    """A cell's own label (shown only in a narrow window, where the header row is hidden)."""
+    return f'<div class="cc-label">{label}</div>{inner_html}'
 
 
 def show_results(result: dict, text: str, result_id: str) -> None:
@@ -243,16 +266,20 @@ def show_results(result: dict, text: str, result_id: str) -> None:
     rows = build_rows(result, text)
     open_key = f"context_open_{result_id}"
     st.caption("Items to check come first. Use “Show in context” to see the wording in its place in the contract.")
-    header = st.columns(COLUMN_WIDTHS)
-    for col, label in zip(header, ["Clause type", "Status", "Exact wording", "Why", ""]):
-        col.markdown(f"**{label}**")
+    st.markdown(TABLE_CSS, unsafe_allow_html=True)
+    table = st.container(gap=None, key=f"restable_{result_id}")  # no space between header and rows
+    with table.container(border=True, key=f"reshead_{result_id}"):
+        for col, label in zip(st.columns(COLUMN_WIDTHS), COLUMN_LABELS + [""]):
+            col.markdown(f'<div class="cc-head">{label}</div>', unsafe_allow_html=True)
     for i, r in enumerate(rows):
-        with st.container(border=True):
+        row_key = f"reslast_{result_id}" if i == len(rows) - 1 else f"resrow_{result_id}_{i}"
+        with table.container(border=True, key=row_key):
             c_type, c_status, c_words, c_why, c_btn = st.columns(COLUMN_WIDTHS)
-            c_type.markdown(_cell(r["Clause type"]), unsafe_allow_html=True)
-            c_status.markdown(_badge(r["status"]), unsafe_allow_html=True)
-            c_words.markdown(_cell(r["Exact wording"] or "(no wording found)"), unsafe_allow_html=True)
-            c_why.markdown(_cell(r["Why"]), unsafe_allow_html=True)
+            c_type.markdown(_labelled("Clause type", _cell(r["Clause type"])), unsafe_allow_html=True)
+            c_status.markdown(_labelled("Status", _badge(r["status"])), unsafe_allow_html=True)
+            c_words.markdown(_labelled("Exact wording", _cell(r["Exact wording"] or "(no wording found)")),
+                             unsafe_allow_html=True)
+            c_why.markdown(_labelled("Why", _cell(r["Why"])), unsafe_allow_html=True)
             is_open = st.session_state.get(open_key) == i
             if r["start"] is not None:
                 if c_btn.button("Hide context" if is_open else "Show in context", key=f"ctx_{result_id}_{i}"):

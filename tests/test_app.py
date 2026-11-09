@@ -201,14 +201,18 @@ def test_page_renders_sample_instantly_without_api():
     assert data["title"] not in text and "HertzGroup" not in text      # no filename in the main view
     assert "**4 clause types verified, 1 to check yourself (1 not found)**" in text
     for label in ("Clause type", "Status", "Exact wording", "Why"):
-        assert f"**{label}**" in text
+        assert f'<div class="cc-head">{label}</div>' in text           # header row
+    assert text.count("<style>") == 1 and "st-key-reshead_" in text   # table styling added once
     # statuses in words, in order: the Not found row before the Verified rows
-    badges = [m.value for m in at.markdown if "border-radius:4px" in m.value]
-    assert [b.split(">")[1].split("<")[0] for b in badges] == ["Not found: check"] + ["Verified"] * 4
+    import re
+    badges = re.findall(r'border-radius:4px[^>]*>([^<]+)</span>', text)
+    assert badges == ["Not found: check"] + ["Verified"] * 4
+    # every cell carries its own label for narrow windows
+    assert text.count('<div class="cc-label">Exact wording</div>') == 5
     # full wording shown, wrapping, not cut off
     words = [r["Exact wording"] for r in app.build_rows(data["result"], app.load_sample()[1]) if r["Exact wording"]]
     longest = max(words, key=len)
-    assert any(app._cell(longest) == m.value for m in at.markdown)
+    assert any(app._cell(longest) in m.value for m in at.markdown)
 
 
 def test_show_in_context_button_opens_and_closes():
