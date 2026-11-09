@@ -1,0 +1,67 @@
+{
+ "titles": [
+  "ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT",
+  "ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT(1)"
+ ],
+ "rows_read": 92,
+ "text_identical": true,
+ "text_chars": [
+  12020,
+  12020
+ ],
+ "per_category": {
+  "Change of Control": {
+   "same": true,
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT": [],
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT(1)": [],
+   "n_spans": [
+    0,
+    0
+   ]
+  },
+  "Termination for Convenience": {
+   "same": true,
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT": [],
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT(1)": [],
+   "n_spans": [
+    1,
+    1
+   ]
+  },
+  "Cap on Liability": {
+   "same": true,
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT": [],
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT(1)": [],
+   "n_spans": [
+    0,
+    0
+   ]
+  },
+  "Anti-Assignment": {
+   "same": false,
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT": [],
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT(1)": [
+    {
+     "start": 11550,
+     "text": "This Agreement shall not be assignable by Consultant."
+    }
+   ],
+   "n_spans": [
+    0,
+    1
+   ]
+  },
+  "Governing Law": {
+   "same": true,
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT": [],
+   "only_in_ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT(1)": [],
+   "n_spans": [
+    1,
+    1
+   ]
+  }
+ },
+ "dropped_by_loader": [
+  "ADUROBIOTECH,INC_06_02_2020-EX-10.7-CONSULTING AGREEMENT"
+ ]
+}

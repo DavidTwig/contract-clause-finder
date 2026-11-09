@@ -1,6 +1,6 @@
 # Category definitions, shared by the first and second pass.
 # Wording is CUAD's own (from the CUAD-QA question "Details"), with broken characters fixed.
-# v2: Governing Law adds an instruction on what to quote (David, after Stage 2 HertzGroup over-long quote).
+# v2: Governing Law adds an instruction on what to quote (suggested by Claude after the Stage 2 HertzGroup over-long quote, approved by David).
 # v3: same wording as v2, but that instruction is now separate quote guidance, so the second pass
 #     judges clause type against the definition alone (David, Stage 3).
 # Format: a line "## <exact category name>", then its definition, then optionally a line starting

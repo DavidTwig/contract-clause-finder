@@ -1,0 +1,239 @@
+{
+ "note": "keyword_hints are regex matches for orientation only; judge from gold_text.",
+ "runs": {
+  "stage3_dev": {
+   "definitions": "category_definitions_v3",
+   "complete": true,
+   "spans": [
+    {
+     "title": "BLACKBOXSTOCKSINC_08_05_2014-EX-10.1-DISTRIBUTOR AGREEMENT",
+     "contract_status": "Verified",
+     "gold_start": 4204,
+     "gold_end": 4301,
+     "found_any_overlap": true,
+     "best_jaccard": 1.0,
+     "gold_text": "Nor shall the Company at any time be liable for any incidental, special or consequential damages.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "BLACKBOXSTOCKSINC_08_05_2014-EX-10.1-DISTRIBUTOR AGREEMENT",
+     "contract_status": "Verified",
+     "gold_start": 7412,
+     "gold_end": 7593,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "IN NO EVENT SHALL COMPANY BE LIABLE FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES AND DISTRIBUTOR'S REMEDIES SHALL BE LIMITED TO REPAIR OR REPLACEMENT OF NONCONFORMING UNITS OR PARTS.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "HertzGroupRealtyTrustInc_20190920_S-11A_EX-10.8_11816941_EX-10.8_Trademark License Agreement",
+     "contract_status": "Not found: check",
+     "gold_start": 7710,
+     "gold_end": 8148,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "IN NO EVENT SHALL LICENSOR OR ANY OF ITS DIRECTORS, OFFICERS, EMPLOYEES, LICENSORS, SUPPLIERS OR OTHER REPRESENTATIVES BE LIABLE FOR ANY INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF GOODWILL, COMPUTER FAILURE OR MALFUNCTION OR OTHERWISE, ARISING FROM OR RELATING TO THIS AGREEMENT OR THE LICENSED MARK, EVEN IF LICENSOR IS EXPRESSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 24549,
+     "gold_end": 24973,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "In the event of termination by either party in accordance with any of the provisions of this Agreement, neither party shall be liable to the other, because of such termination, for compensation, reimbursement or damages on account of the loss of prospective profits or anticipated sales or on account of expenditures, inventory, investments, leases or commitments in connection with the business or goodwill of either party.",
+     "keyword_hints": [
+      "none"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 25794,
+     "gold_end": 25970,
+     "found_any_overlap": true,
+     "best_jaccard": 1.0,
+     "gold_text": "IN NO EVENT SHALL JRVS'S LIABILITY ARISING OUT OF THIS AGREEMENT EXCEED THE AMOUNT RECEIVED BY JRVS FROM THE DISTRIBUTOR HEREUNDER FOR THE PRODUCT GIVING RISE TO THE LIABILITY.",
+     "keyword_hints": [
+      "monetary_cap"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 25971,
+     "gold_end": 26262,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "IN NO EVENT SHALL JRVS BE LIABLE FOR COSTS OF PROCUREMENT OF SUBSTITUTE PRODUCTS OR SERVICES, LOST PROFITS OR ANY CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR INDIRECT DAMAGES, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY (INCLUDING NEGLIGENCE OR STRICT LIABILITY), ARISING OUT OF THIS AGREEMENT.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 26438,
+     "gold_end": 26591,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "NO ACTIONS, REGARDLESS OF FORM, ARISING OUT OF THIS AGREEMENT, MAY BE BROUGHT BY DISTRIBUTOR MORE THAN ONE (1) YEAR AFTER THE CAUSE OF ACTION HAS ARISEN.",
+     "keyword_hints": [
+      "claim_time_limit"
+     ]
+    },
+    {
+     "title": "WARNERCHILCOTTPLC_12_31_2003-EX-4.36-DEVELOPMENT AGREEMENT",
+     "contract_status": "Not found: check",
+     "gold_start": 24842,
+     "gold_end": 25428,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "Neither Party shall be liable to the Other Party for any direct, indirect, consequential, incidental, special, punitive or exemplary damages arising out of or relating to the\n\n                                                                               9\n\nsuspension or termination of any of its obligations or duties under this Agreement by reason of the occurrence of Force Majeure. In the event that Force Majeure has occurred and is continuing for a period of at least six (6) months, the Other Party shall have the right to terminate this Agreement upon thirty (30) days' notice.",
+     "keyword_hints": [
+      "damage_type_exclusion",
+      "force_majeure"
+     ]
+    }
+   ]
+  },
+  "stage3_dev_defs_v4": {
+   "definitions": "category_definitions_v4",
+   "complete": true,
+   "spans": [
+    {
+     "title": "BLACKBOXSTOCKSINC_08_05_2014-EX-10.1-DISTRIBUTOR AGREEMENT",
+     "contract_status": "Verified",
+     "gold_start": 4204,
+     "gold_end": 4301,
+     "found_any_overlap": true,
+     "best_jaccard": 1.0,
+     "gold_text": "Nor shall the Company at any time be liable for any incidental, special or consequential damages.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "BLACKBOXSTOCKSINC_08_05_2014-EX-10.1-DISTRIBUTOR AGREEMENT",
+     "contract_status": "Verified",
+     "gold_start": 7412,
+     "gold_end": 7593,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "IN NO EVENT SHALL COMPANY BE LIABLE FOR ANY INCIDENTAL OR CONSEQUENTIAL DAMAGES AND DISTRIBUTOR'S REMEDIES SHALL BE LIMITED TO REPAIR OR REPLACEMENT OF NONCONFORMING UNITS OR PARTS.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "HertzGroupRealtyTrustInc_20190920_S-11A_EX-10.8_11816941_EX-10.8_Trademark License Agreement",
+     "contract_status": "Not found: check",
+     "gold_start": 7710,
+     "gold_end": 8148,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "IN NO EVENT SHALL LICENSOR OR ANY OF ITS DIRECTORS, OFFICERS, EMPLOYEES, LICENSORS, SUPPLIERS OR OTHER REPRESENTATIVES BE LIABLE FOR ANY INDIRECT, SPECIAL OR CONSEQUENTIAL DAMAGES, OR DAMAGES FOR LOSS OF PROFITS, BUSINESS INTERRUPTION, LOSS OF GOODWILL, COMPUTER FAILURE OR MALFUNCTION OR OTHERWISE, ARISING FROM OR RELATING TO THIS AGREEMENT OR THE LICENSED MARK, EVEN IF LICENSOR IS EXPRESSLY ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 24549,
+     "gold_end": 24973,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "In the event of termination by either party in accordance with any of the provisions of this Agreement, neither party shall be liable to the other, because of such termination, for compensation, reimbursement or damages on account of the loss of prospective profits or anticipated sales or on account of expenditures, inventory, investments, leases or commitments in connection with the business or goodwill of either party.",
+     "keyword_hints": [
+      "none"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 25794,
+     "gold_end": 25970,
+     "found_any_overlap": true,
+     "best_jaccard": 0.376,
+     "gold_text": "IN NO EVENT SHALL JRVS'S LIABILITY ARISING OUT OF THIS AGREEMENT EXCEED THE AMOUNT RECEIVED BY JRVS FROM THE DISTRIBUTOR HEREUNDER FOR THE PRODUCT GIVING RISE TO THE LIABILITY.",
+     "keyword_hints": [
+      "monetary_cap"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 25971,
+     "gold_end": 26262,
+     "found_any_overlap": true,
+     "best_jaccard": 0.622,
+     "gold_text": "IN NO EVENT SHALL JRVS BE LIABLE FOR COSTS OF PROCUREMENT OF SUBSTITUTE PRODUCTS OR SERVICES, LOST PROFITS OR ANY CONSEQUENTIAL, SPECIAL, INCIDENTAL, OR INDIRECT DAMAGES, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY (INCLUDING NEGLIGENCE OR STRICT LIABILITY), ARISING OUT OF THIS AGREEMENT.",
+     "keyword_hints": [
+      "damage_type_exclusion"
+     ]
+    },
+    {
+     "title": "ImineCorp_20180725_S-1_EX-10.5_11275970_EX-10.5_Distributor Agreement",
+     "contract_status": "Verified",
+     "gold_start": 26438,
+     "gold_end": 26591,
+     "found_any_overlap": true,
+     "best_jaccard": 1.0,
+     "gold_text": "NO ACTIONS, REGARDLESS OF FORM, ARISING OUT OF THIS AGREEMENT, MAY BE BROUGHT BY DISTRIBUTOR MORE THAN ONE (1) YEAR AFTER THE CAUSE OF ACTION HAS ARISEN.",
+     "keyword_hints": [
+      "claim_time_limit"
+     ]
+    },
+    {
+     "title": "WARNERCHILCOTTPLC_12_31_2003-EX-4.36-DEVELOPMENT AGREEMENT",
+     "contract_status": "Not found: check",
+     "gold_start": 24842,
+     "gold_end": 25428,
+     "found_any_overlap": false,
+     "best_jaccard": 0.0,
+     "gold_text": "Neither Party shall be liable to the Other Party for any direct, indirect, consequential, incidental, special, punitive or exemplary damages arising out of or relating to the\n\n                                                                               9\n\nsuspension or termination of any of its obligations or duties under this Agreement by reason of the occurrence of Force Majeure. In the event that Force Majeure has occurred and is continuing for a period of at least six (6) months, the Other Party shall have the right to terminate this Agreement upon thirty (30) days' notice.",
+     "keyword_hints": [
+      "damage_type_exclusion",
+      "force_majeure"
+     ]
+    }
+   ]
+  }
+ },
+ "summary": {
+  "stage3_dev": {
+   "gold_spans": 8,
+   "found_any_overlap": 2,
+   "found_jaccard_ge_0.5": 2,
+   "missed": 6,
+   "missed_by_hint": {
+    "damage_type_exclusion": 4,
+    "claim_time_limit": 1,
+    "monetary_cap": 0,
+    "force_majeure": 1,
+    "none": 1
+   }
+  },
+  "stage3_dev_defs_v4": {
+   "gold_spans": 8,
+   "found_any_overlap": 4,
+   "found_jaccard_ge_0.5": 3,
+   "missed": 4,
+   "missed_by_hint": {
+    "damage_type_exclusion": 3,
+    "claim_time_limit": 0,
+    "monetary_cap": 0,
+    "force_majeure": 1,
+    "none": 1
+   }
+  }
+ }
+}
