@@ -1,0 +1,275 @@
+{
+ "title": "HertzGroupRealtyTrustInc_20190920_S-11A_EX-10.8_11816941_EX-10.8_Trademark License Agreement",
+ "source": "CUAD v1 (CC BY 4.0), train split, dev set of this project",
+ "made": "2026-11-09T19:38:06+00:00",
+ "versions": {
+  "model": "openai/gpt-oss-120b",
+  "first_pass_prompt": "first_pass_v2",
+  "second_pass_prompt": "second_pass_v1",
+  "definitions": "category_definitions_v4"
+ },
+ "result": {
+  "chunks": [
+   {
+    "index": 0,
+    "start": 0,
+    "end": 11751,
+    "status": "ok",
+    "cached": true,
+    "attempts": 0,
+    "usage": {
+     "time": "2026-11-09T19:02:34+00:00",
+     "date": "2026-11-09",
+     "model": "openai/gpt-oss-120b",
+     "prompt_version": "first_pass_v2",
+     "attempt": 1,
+     "prompt_tokens": 3210,
+     "completion_tokens": 564,
+     "reasoning_tokens": 314,
+     "total_tokens": 3774
+    },
+    "n_findings": 4,
+    "delimiters_removed": 0
+   },
+   {
+    "index": 1,
+    "start": 10694,
+    "end": 14313,
+    "status": "ok",
+    "cached": true,
+    "attempts": 0,
+    "usage": {
+     "time": "2026-11-09T19:03:33+00:00",
+     "date": "2026-11-09",
+     "model": "openai/gpt-oss-120b",
+     "prompt_version": "first_pass_v2",
+     "attempt": 1,
+     "prompt_tokens": 1453,
+     "completion_tokens": 55,
+     "reasoning_tokens": 40,
+     "total_tokens": 1508
+    },
+    "n_findings": 0,
+    "delimiters_removed": 0
+   }
+  ],
+  "raw_findings": [
+   {
+    "chunk": 0,
+    "category": "Termination for Convenience",
+    "model_category": "Termination for Convenience",
+    "quote": "Either Party may terminate this Agreement by giving the other Party thirty (30) days' prior written notice.",
+    "reason": "Allows termination without cause by notice.",
+    "status": "passed",
+    "start": 5966,
+    "end": 6073
+   },
+   {
+    "chunk": 0,
+    "category": "Change of Control",
+    "model_category": "Change of Control",
+    "quote": "This Agreement and all rights and licenses granted under this Agreement shall terminate as soon as practicable, but no longer than thirty (30) days, after: 3.2.1 Licensee is acquired by a third party; or 3.2.2 Licensor or any affiliate of Licensor ceases to manage Licensee.",
+    "reason": "Termination triggered by acquisition (change of control).",
+    "status": "passed",
+    "start": 6078,
+    "end": 6352
+   },
+   {
+    "chunk": 0,
+    "category": "Anti-Assignment",
+    "model_category": "Anti-Assignment",
+    "quote": "Licensed Users may not assign this Agreement and/or any rights and/or obligations hereunder without the prior written consent of Licensor and any such attempted assignment shall be void.",
+    "reason": "Requires consent for assignment.",
+    "status": "passed",
+    "start": 8529,
+    "end": 8715
+   },
+   {
+    "chunk": 0,
+    "category": "Governing Law",
+    "model_category": "Governing Law",
+    "quote": "The provisions of this Agreement shall be governed by and construed in accordance with the laws of the State of California (excluding any conflict of law rule or principle that would refer to the laws of another jurisdiction).",
+    "reason": "Specifies the governing law.",
+    "status": "passed",
+    "start": 10467,
+    "end": 10693
+   }
+  ],
+  "findings": [
+   {
+    "chunk": 0,
+    "category": "Termination for Convenience",
+    "model_category": "Termination for Convenience",
+    "quote": "Either Party may terminate this Agreement by giving the other Party thirty (30) days' prior written notice.",
+    "reason": "Allows termination without cause by notice.",
+    "status": "Verified",
+    "start": 5966,
+    "end": 6073,
+    "merged_from_chunks": [
+     0
+    ],
+    "section_start": 5930,
+    "section_end": 7322,
+    "verdict": "confirm",
+    "verdict_reason": "The clause allows either party to end the agreement by notice alone, fitting termination for convenience.",
+    "second_pass_error": null,
+    "second_pass_usage": {
+     "time": "2026-11-09T19:03:34+00:00",
+     "date": "2026-11-09",
+     "model": "openai/gpt-oss-120b",
+     "prompt_version": "second_pass_v1",
+     "attempt": 1,
+     "prompt_tokens": 739,
+     "completion_tokens": 69,
+     "reasoning_tokens": 33,
+     "total_tokens": 808
+    },
+    "second_pass_cached": true
+   },
+   {
+    "chunk": 0,
+    "category": "Change of Control",
+    "model_category": "Change of Control",
+    "quote": "This Agreement and all rights and licenses granted under this Agreement shall terminate as soon as practicable, but no longer than thirty (30) days, after: 3.2.1 Licensee is acquired by a third party; or 3.2.2 Licensor or any affiliate of Licensor ceases to manage Licensee.",
+    "reason": "Termination triggered by acquisition (change of control).",
+    "status": "Verified",
+    "start": 6078,
+    "end": 6352,
+    "merged_from_chunks": [
+     0
+    ],
+    "section_start": 5930,
+    "section_end": 7322,
+    "verdict": "confirm",
+    "verdict_reason": "Specifies termination triggered by Licensee's acquisition, a change of control event.",
+    "second_pass_error": null,
+    "second_pass_usage": {
+     "time": "2026-11-09T19:03:34+00:00",
+     "date": "2026-11-09",
+     "model": "openai/gpt-oss-120b",
+     "prompt_version": "second_pass_v1",
+     "attempt": 1,
+     "prompt_tokens": 817,
+     "completion_tokens": 87,
+     "reasoning_tokens": 53,
+     "total_tokens": 904
+    },
+    "second_pass_cached": true
+   },
+   {
+    "chunk": 0,
+    "category": "Anti-Assignment",
+    "model_category": "Anti-Assignment",
+    "quote": "Licensed Users may not assign this Agreement and/or any rights and/or obligations hereunder without the prior written consent of Licensor and any such attempted assignment shall be void.",
+    "reason": "Requires consent for assignment.",
+    "status": "Verified",
+    "start": 8529,
+    "end": 8715,
+    "merged_from_chunks": [
+     0
+    ],
+    "section_start": 8497,
+    "section_end": 10127,
+    "verdict": "confirm",
+    "verdict_reason": "The clause requires prior written consent for any assignment, fitting the anti-assignment definition.",
+    "second_pass_error": null,
+    "second_pass_usage": {
+     "time": "2026-11-09T19:03:34+00:00",
+     "date": "2026-11-09",
+     "model": "openai/gpt-oss-120b",
+     "prompt_version": "second_pass_v1",
+     "attempt": 1,
+     "prompt_tokens": 744,
+     "completion_tokens": 58,
+     "reasoning_tokens": 23,
+     "total_tokens": 802
+    },
+    "second_pass_cached": true
+   },
+   {
+    "chunk": 0,
+    "category": "Governing Law",
+    "model_category": "Governing Law",
+    "quote": "The provisions of this Agreement shall be governed by and construed in accordance with the laws of the State of California (excluding any conflict of law rule or principle that would refer to the laws of another jurisdiction).",
+    "reason": "Specifies the governing law.",
+    "status": "Verified",
+    "start": 10467,
+    "end": 10693,
+    "merged_from_chunks": [
+     0
+    ],
+    "section_start": 9238,
+    "section_end": 11751,
+    "verdict": "confirm",
+    "verdict_reason": "The passage explicitly sets the governing law for the agreement.",
+    "second_pass_error": null,
+    "second_pass_usage": {
+     "time": "2026-11-09T16:55:53+00:00",
+     "date": "2026-11-09",
+     "model": "openai/gpt-oss-120b",
+     "prompt_version": "second_pass_v1",
+     "attempt": 1,
+     "prompt_tokens": 940,
+     "completion_tokens": 53,
+     "reasoning_tokens": 24,
+     "total_tokens": 993
+    },
+    "second_pass_cached": true
+   }
+  ],
+  "clauses": [
+   {
+    "category": "Change of Control",
+    "status": "Verified",
+    "reasons": [
+     "1 verified finding(s)"
+    ],
+    "n_verified": 1,
+    "n_needs_review": 0,
+    "n_failed_quotes": 0
+   },
+   {
+    "category": "Termination for Convenience",
+    "status": "Verified",
+    "reasons": [
+     "1 verified finding(s)"
+    ],
+    "n_verified": 1,
+    "n_needs_review": 0,
+    "n_failed_quotes": 0
+   },
+   {
+    "category": "Cap on Liability",
+    "status": "Not found: check",
+    "reasons": [
+     "no finding"
+    ],
+    "n_verified": 0,
+    "n_needs_review": 0,
+    "n_failed_quotes": 0
+   },
+   {
+    "category": "Anti-Assignment",
+    "status": "Verified",
+    "reasons": [
+     "1 verified finding(s)"
+    ],
+    "n_verified": 1,
+    "n_needs_review": 0,
+    "n_failed_quotes": 0
+   },
+   {
+    "category": "Governing Law",
+    "status": "Verified",
+    "reasons": [
+     "1 verified finding(s)"
+    ],
+    "n_verified": 1,
+    "n_needs_review": 0,
+    "n_failed_quotes": 0
+   }
+  ],
+  "failed_chunks": [],
+  "errors": []
+ }
+}
