@@ -1,7 +1,8 @@
 """Stage 3: all five clause types, second pass, statuses, merging, on the dev set.
 
-Run:  .venv/Scripts/python scripts/run_stage3_dev.py
-Writes results/stage3_dev.json, stage3_dev_findings.csv, stage3_dev_clauses.csv.
+Run:  .venv/Scripts/python scripts/run_stage3_dev.py [name]
+Writes results/<name>.json, <name>_findings.csv, <name>_clauses.csv (name defaults to stage3_dev).
+results/stage3_dev.* = definitions v3 run; results/stage3_dev_defs_v4.* = Cap on Liability change.
 Re-runs use the cache. If the daily limit stops the run, results are saved with complete=false.
 
 Counts here are provisional (Stage 4 defines the metrics). Span overlap is character-offset Jaccard.
@@ -20,9 +21,10 @@ import config
 import llm
 from pipeline import NEEDS_REVIEW, NOT_FOUND, VERIFIED, analyse_contract
 
-OUT = config.RESULTS_DIR / "stage3_dev.json"
-OUT_FINDINGS = config.RESULTS_DIR / "stage3_dev_findings.csv"
-OUT_CLAUSES = config.RESULTS_DIR / "stage3_dev_clauses.csv"
+NAME = sys.argv[1] if len(sys.argv) > 1 else "stage3_dev"
+OUT = config.RESULTS_DIR / f"{NAME}.json"
+OUT_FINDINGS = config.RESULTS_DIR / f"{NAME}_findings.csv"
+OUT_CLAUSES = config.RESULTS_DIR / f"{NAME}_clauses.csv"
 
 
 def char_jaccard(a, b) -> float:
@@ -39,6 +41,11 @@ def size_stats(values):
 
 
 def main():
+    if OUT.exists():  # never overwrite results made with different prompts
+        old = json.loads(OUT.read_text(encoding="utf-8"))["summary"]["run"]
+        now = (config.FIRST_PASS_PROMPT, config.SECOND_PASS_PROMPT, config.DEFINITIONS)
+        if (old["first_pass_prompt"], old["second_pass_prompt"], old["definitions"]) != now:
+            sys.exit(f"{OUT} was made with different prompt versions; choose another name.")
     titles = json.loads(config.DEV_TITLES_PATH.read_text(encoding="utf-8"))
     with open(config.CONTRACTS_PATH, encoding="utf-8") as f:
         recs = {r["title"]: r for r in map(json.loads, f) if r["title"] in titles}
@@ -146,7 +153,8 @@ def main():
             "second_pass": size_stats([u["completion_tokens"] for u in sp_usage]),
             "first_pass_reasoning": size_stats([u["reasoning_tokens"] for u in fp_usage]),
             "second_pass_reasoning": size_stats([u["reasoning_tokens"] for u in sp_usage]),
-            "throttle_reply_estimate": config.REPLY_TOKENS_ESTIMATE,
+            "throttle_reply_estimate": {"first_pass": llm.reply_estimate(config.FIRST_PASS_PROMPT),
+                                        "second_pass": llm.reply_estimate(config.SECOND_PASS_PROMPT)},
         },
         "note": "Provisional counts; Stage 4 defines metrics. best_gold_jaccard is character-offset Jaccard.",
     }

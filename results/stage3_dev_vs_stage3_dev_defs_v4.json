@@ -1,0 +1,329 @@
+{
+ "runs": {
+  "stage3_dev": {
+   "first_pass_prompt": "first_pass_v2",
+   "second_pass_prompt": "second_pass_v1",
+   "definitions": "category_definitions_v3"
+  },
+  "stage3_dev_defs_v4": {
+   "first_pass_prompt": "first_pass_v2",
+   "second_pass_prompt": "second_pass_v1",
+   "definitions": "category_definitions_v4"
+  }
+ },
+ "tokens": {
+  "stage3_dev": {
+   "first_pass_all_calls": {
+    "prompt_tokens": 28396,
+    "completion_tokens": 2829,
+    "reasoning_tokens": 1710,
+    "total_tokens": 31225
+   },
+   "second_pass_all_calls": {
+    "prompt_tokens": 11263,
+    "completion_tokens": 1015,
+    "reasoning_tokens": 485,
+    "total_tokens": 12278
+   },
+   "first_pass_uncached_this_run": {
+    "prompt_tokens": 28396,
+    "completion_tokens": 2829,
+    "reasoning_tokens": 1710,
+    "total_tokens": 31225
+   },
+   "second_pass_uncached_this_run": {
+    "prompt_tokens": 11263,
+    "completion_tokens": 1015,
+    "reasoning_tokens": 485,
+    "total_tokens": 12278
+   },
+   "api_calls_this_run": {
+    "first_pass": 12,
+    "second_pass": 15
+   }
+  },
+  "stage3_dev_defs_v4": {
+   "first_pass_all_calls": {
+    "prompt_tokens": 28684,
+    "completion_tokens": 3123,
+    "reasoning_tokens": 1837,
+    "total_tokens": 31807
+   },
+   "second_pass_all_calls": {
+    "prompt_tokens": 13118,
+    "completion_tokens": 1179,
+    "reasoning_tokens": 569,
+    "total_tokens": 14297
+   },
+   "first_pass_uncached_this_run": {
+    "prompt_tokens": 28684,
+    "completion_tokens": 3123,
+    "reasoning_tokens": 1837,
+    "total_tokens": 31807
+   },
+   "second_pass_uncached_this_run": {
+    "prompt_tokens": 7203,
+    "completion_tokens": 675,
+    "reasoning_tokens": 344,
+    "total_tokens": 7878
+   },
+   "api_calls_this_run": {
+    "first_pass": 12,
+    "second_pass": 9
+   }
+  }
+ },
+ "per_category": {
+  "stage3_dev": {
+   "Change of Control": {
+    "with_gold": {
+     "Verified": 2,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 3
+    },
+    "gold_spans": 3,
+    "gold_spans_touched": 2,
+    "gold_spans_jaccard_ge_0.5": 1,
+    "verified_findings": 2,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 2,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   },
+   "Termination for Convenience": {
+    "with_gold": {
+     "Verified": 2,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 3
+    },
+    "gold_spans": 2,
+    "gold_spans_touched": 2,
+    "gold_spans_jaccard_ge_0.5": 2,
+    "verified_findings": 2,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 2,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   },
+   "Cap on Liability": {
+    "with_gold": {
+     "Verified": 2,
+     "Needs review": 0,
+     "Not found: check": 2
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 1
+    },
+    "gold_spans": 8,
+    "gold_spans_touched": 2,
+    "gold_spans_jaccard_ge_0.5": 2,
+    "verified_findings": 2,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 2,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [
+     "HertzGroupRealtyTrustInc_20190920_S-11A_EX-10.8_11816941_EX-10.8_Trademark License Agreement -> Not found: check",
+     "WARNERCHILCOTTPLC_12_31_2003-EX-4.36-DEVELOPMENT AGREEMENT -> Not found: check"
+    ],
+    "reject_reasons": []
+   },
+   "Anti-Assignment": {
+    "with_gold": {
+     "Verified": 4,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 1
+    },
+    "gold_spans": 5,
+    "gold_spans_touched": 5,
+    "gold_spans_jaccard_ge_0.5": 5,
+    "verified_findings": 5,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 5,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   },
+   "Governing Law": {
+    "with_gold": {
+     "Verified": 4,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 1
+    },
+    "gold_spans": 4,
+    "gold_spans_touched": 4,
+    "gold_spans_jaccard_ge_0.5": 4,
+    "verified_findings": 4,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 4,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   }
+  },
+  "stage3_dev_defs_v4": {
+   "Change of Control": {
+    "with_gold": {
+     "Verified": 2,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 3
+    },
+    "gold_spans": 3,
+    "gold_spans_touched": 2,
+    "gold_spans_jaccard_ge_0.5": 1,
+    "verified_findings": 2,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 2,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   },
+   "Termination for Convenience": {
+    "with_gold": {
+     "Verified": 2,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 1,
+     "Needs review": 0,
+     "Not found: check": 2
+    },
+    "gold_spans": 2,
+    "gold_spans_touched": 2,
+    "gold_spans_jaccard_ge_0.5": 2,
+    "verified_findings": 3,
+    "verified_findings_overlapping_no_gold": 1,
+    "second_pass": {
+     "confirm": 3,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   },
+   "Cap on Liability": {
+    "with_gold": {
+     "Verified": 2,
+     "Needs review": 0,
+     "Not found: check": 2
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 1
+    },
+    "gold_spans": 8,
+    "gold_spans_touched": 4,
+    "gold_spans_jaccard_ge_0.5": 3,
+    "verified_findings": 3,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 3,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [
+     "HertzGroupRealtyTrustInc_20190920_S-11A_EX-10.8_11816941_EX-10.8_Trademark License Agreement -> Not found: check",
+     "WARNERCHILCOTTPLC_12_31_2003-EX-4.36-DEVELOPMENT AGREEMENT -> Not found: check"
+    ],
+    "reject_reasons": []
+   },
+   "Anti-Assignment": {
+    "with_gold": {
+     "Verified": 4,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 1
+    },
+    "gold_spans": 5,
+    "gold_spans_touched": 5,
+    "gold_spans_jaccard_ge_0.5": 5,
+    "verified_findings": 5,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 5,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   },
+   "Governing Law": {
+    "with_gold": {
+     "Verified": 4,
+     "Needs review": 0,
+     "Not found: check": 0
+    },
+    "without_gold": {
+     "Verified": 0,
+     "Needs review": 0,
+     "Not found: check": 1
+    },
+    "gold_spans": 4,
+    "gold_spans_touched": 4,
+    "gold_spans_jaccard_ge_0.5": 4,
+    "verified_findings": 4,
+    "verified_findings_overlapping_no_gold": 0,
+    "second_pass": {
+     "confirm": 4,
+     "reject": 0,
+     "failed": 0
+    },
+    "missed": [],
+    "reject_reasons": []
+   }
+  }
+ },
+ "note": "Provisional; Stage 4 defines the metrics. Span match uses Verified findings only."
+}

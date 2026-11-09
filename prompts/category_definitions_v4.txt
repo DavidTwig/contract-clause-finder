@@ -1,0 +1,26 @@
+# Category definitions, shared by the first and second pass.
+# Wording is CUAD's own (from the CUAD-QA question "Details"), with broken characters fixed.
+# v2: Governing Law adds an instruction on what to quote (David, after Stage 2 HertzGroup over-long quote).
+# v3: same wording as v2, but that instruction is now separate quote guidance, so the second pass
+#     judges clause type against the definition alone (David, Stage 3).
+# v4: Cap on Liability definition adds one sentence (monetary caps, damage-type exclusions, time
+#     limits on claims), so BOTH passes see it (David, after Stage 3 Cap on Liability misses).
+# Format: a line "## <exact category name>", then its definition, then optionally a line starting
+# "Quote guidance:". The definition goes to both passes; quote guidance goes to the FIRST PASS ONLY.
+# Lines starting with # are comments.
+
+## Change of Control
+Does one party have the right to terminate or is consent or notice required of the counterparty if such party undergoes a change of control, such as a merger, stock sale, transfer of all or substantially all of its assets or business, or assignment by operation of law?
+
+## Termination for Convenience
+Can a party terminate this contract without cause (solely by giving a notice and allowing a waiting period to expire)?
+
+## Cap on Liability
+Does the contract include a cap on liability upon the breach of a party's obligation? This includes time limitation for the counterparty to bring claims or maximum amount for recovery. This includes monetary caps, exclusions of types of damages such as consequential or indirect damages, and time limits on bringing claims.
+
+## Anti-Assignment
+Is consent or notice required of a party if the contract is assigned to a third party?
+
+## Governing Law
+Which state/country's law governs the interpretation of the contract?
+Quote guidance: Quote only the sentence stating which law governs the contract. Do not include wording about courts, jurisdiction, venue or service of process.

@@ -22,16 +22,23 @@ MAX_COMPLETION_TOKENS = 4_096   # upper bound per reply (reasoning + answer)
 #          first_pass_v2 = same text as v1, with category_definitions_v2 (Governing Law quote rule).
 #          category_definitions_v3 = v2 wording with the quote rule split out as "Quote guidance"
 #          (first pass only). first_pass_v2 renders byte-identically from v2 and v3 (tested).
+#          category_definitions_v4 = v3 + one Cap on Liability sentence in the definition (both passes).
+#          The first_pass_v2 / second_pass_v1 template files are unchanged; runs record all three names.
+# FROZEN after the Stage 3 Cap on Liability dev run (David). Do not change without his say-so.
 FIRST_PASS_PROMPT = "first_pass_v2"
 SECOND_PASS_PROMPT = "second_pass_v1"
-DEFINITIONS = "category_definitions_v3"
+DEFINITIONS = "category_definitions_v4"
 SECTION_MAX_SIDE_CHARS = 1_500  # second pass: at most this much context either side of the quote
 
 # --- Rate limits (Groq's published limits for openai/gpt-oss-120b) ---------
 TOKENS_PER_MINUTE = 8_000
 REQUESTS_PER_MINUTE = 30
 TOKENS_PER_DAY = 200_000
-REPLY_TOKENS_ESTIMATE = 1_500   # used by the throttle before a call, when the real size is unknown
+# Reply size the throttle assumes before a call, when the real size is unknown. Per pass, chosen by
+# prompt-version prefix. Stage 3 dev replies (completion tokens, incl. reasoning): first pass max 611,
+# second pass max 92 (results/stage3_dev.json). Anything else (e.g. scripts/test_api.py) uses the default.
+REPLY_TOKENS_ESTIMATE = {"first_pass": 800, "second_pass": 200}
+REPLY_TOKENS_ESTIMATE_DEFAULT = 1_500
 MAX_RETRY_WAIT_SECONDS = 120    # a longer retry-after means the daily limit: stop instead of waiting
 
 # --- Splitting -------------------------------------------------------------

@@ -122,6 +122,14 @@ def _call_once(messages: list[dict], params: dict, estimated_tokens: int):
     raise RuntimeError("Still rate limited after 10 attempts")
 
 
+def reply_estimate(prompt_version: str) -> int:
+    """Reply tokens the throttle assumes for this prompt (per pass; see config)."""
+    for prefix, tokens in config.REPLY_TOKENS_ESTIMATE.items():
+        if prompt_version.startswith(prefix):
+            return tokens
+    return config.REPLY_TOKENS_ESTIMATE_DEFAULT
+
+
 def chat_json(messages: list[dict], prompt_version: str, validate) -> dict:
     """Send messages, return the parsed JSON reply.
 
@@ -141,7 +149,7 @@ def chat_json(messages: list[dict], prompt_version: str, validate) -> dict:
         cached = json.loads(path.read_text(encoding="utf-8"))
         return {"data": cached["data"], "usage": cached["usage"], "cached": True, "attempts": 0}
 
-    estimated = sum(len(m["content"]) for m in messages) // config.CHARS_PER_TOKEN + config.REPLY_TOKENS_ESTIMATE
+    estimated = sum(len(m["content"]) for m in messages) // config.CHARS_PER_TOKEN + reply_estimate(prompt_version)
     errors = []
     for attempt in (1, 2):  # one retry if the JSON is invalid
         try:
