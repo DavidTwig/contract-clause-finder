@@ -13,7 +13,6 @@ import io
 import json
 import re
 
-import pandas as pd
 import streamlit as st
 
 import config
@@ -27,6 +26,9 @@ CONTEXT_CHARS = 800  # contract text shown either side of a quote
 # Status is always shown as words; the colour only repeats it.
 STATUS_TEXT = {VERIFIED: "Verified", NEEDS_REVIEW: "Needs review", NOT_FOUND: "Not found: check"}
 STATUS_COLOUR = {VERIFIED: "#d8eedc", NEEDS_REVIEW: "#fbe7b5", NOT_FOUND: "#e4e4e4"}
+STATUS_ORDER = {NEEDS_REVIEW: 0, NOT_FOUND: 1, VERIFIED: 2}
+SAMPLE_LABEL = "Trademark License Agreement (public filing, from the CUAD dataset)"
+SAMPLE_SOURCE = "From the public CUAD dataset (CC BY 4.0). This is a saved result, so no AI call is made."
 
 PROTOTYPE_NOTE = ("**Prototype.** Check every output against the contract yourself. "
                   "**Do not upload confidential documents:** uploaded text is sent to an external "
@@ -105,7 +107,8 @@ def build_rows(result: dict, text: str) -> list[dict]:
                          "Why": why, "start": None, "end": None})
     for r in rows:
         r["Status"] = STATUS_TEXT[r["status"]]
-    return rows
+    # what needs the reader's attention first; sorted() is stable, so clause-type order is kept within each status
+    return sorted(rows, key=lambda r: STATUS_ORDER[r["status"]])
 
 
 def context_html(text: str, start: int, end: int, side: int = CONTEXT_CHARS) -> str:
@@ -200,36 +203,58 @@ def current_versions() -> dict:
             "second_pass_prompt": config.SECOND_PASS_PROMPT, "definitions": config.DEFINITIONS}
 
 
-def show_results(result: dict, text: str) -> None:
+def summary_line(result: dict) -> str:
+    """e.g. "4 clause types verified, 1 to check yourself (1 not found)". Counts clause types."""
+    statuses = [cl["status"] for cl in result["clauses"]]
+    v, nr, nf = statuses.count(VERIFIED), statuses.count(NEEDS_REVIEW), statuses.count(NOT_FOUND)
+    line = f"{v} clause type{'' if v == 1 else 's'} verified, {nr + nf} to check yourself"
+    detail = [d for d in (f"{nr} need{'s' if nr == 1 else ''} review" if nr else "",
+                          f"{nf} not found" if nf else "") if d]
+    return line + (f" ({', '.join(detail)})" if detail else "")
+
+
+def _cell(value: str) -> str:
+    """Contract or AI text as escaped HTML that wraps and keeps line breaks."""
+    return f'<div style="white-space: pre-wrap; overflow-wrap: anywhere;">{html.escape(value)}</div>'
+
+
+def _badge(status: str) -> str:
+    return (f'<span style="background:{STATUS_COLOUR[status]}; color:#111; padding:2px 8px; '
+            f'border-radius:4px; font-weight:600; white-space:nowrap;">{STATUS_TEXT[status]}</span>')
+
+
+COLUMN_WIDTHS = [2, 1.6, 5, 3.4, 1.4]
+
+
+def show_results(result: dict, text: str, result_id: str) -> None:
     st.subheader("Results")
+    st.markdown(f"**{summary_line(result)}**")
     st.info(STATUS_NOTE)
     if result["failed_chunks"]:
         st.warning(f"Part of this contract could not be analysed (section(s) "
                    f"{', '.join(str(i + 1) for i in result['failed_chunks'])}). "
                    "Clause types with nothing verified are marked Needs review.")
     rows = build_rows(result, text)
-    table = pd.DataFrame(rows)[["Clause type", "Status", "Exact wording", "Why"]]
-    colours = [STATUS_COLOUR[r["status"]] for r in rows]
-    styled = table.style.apply(lambda col: [f"background-color: {c}; color: #111;" for c in colours],
-                               subset=["Status"])
-    st.caption("Click a row to see the wording in its place in the contract.")
-    event = st.dataframe(styled, hide_index=True, on_select="rerun", selection_mode="single-row",
-                         key="results_table",
-                         column_config={"Clause type": st.column_config.TextColumn(width="small"),
-                                        "Status": st.column_config.TextColumn(width="small"),
-                                        "Exact wording": st.column_config.TextColumn(width="large"),
-                                        "Why": st.column_config.TextColumn(width="medium")})
-    selected = event.selection.rows if event and event.selection else []
-    if selected:
-        r = rows[selected[0]]
-        st.markdown(f"**{r['Clause type']}: {r['Status']}**")
-        if r["start"] is not None:
-            st.markdown(context_html(text, r["start"], r["end"]), unsafe_allow_html=True)
-        elif r["status"] == NOT_FOUND:
-            st.write("Nothing was found for this clause type, so there is no wording to show. "
-                     "Search the contract yourself.")
-        else:
-            st.write("There is no matching wording in the contract to show.")
+    open_key = f"context_open_{result_id}"
+    st.caption("Items to check come first. Use “Show in context” to see the wording in its place in the contract.")
+    header = st.columns(COLUMN_WIDTHS)
+    for col, label in zip(header, ["Clause type", "Status", "Exact wording", "Why", ""]):
+        col.markdown(f"**{label}**")
+    for i, r in enumerate(rows):
+        with st.container(border=True):
+            c_type, c_status, c_words, c_why, c_btn = st.columns(COLUMN_WIDTHS)
+            c_type.markdown(_cell(r["Clause type"]), unsafe_allow_html=True)
+            c_status.markdown(_badge(r["status"]), unsafe_allow_html=True)
+            c_words.markdown(_cell(r["Exact wording"] or "(no wording found)"), unsafe_allow_html=True)
+            c_why.markdown(_cell(r["Why"]), unsafe_allow_html=True)
+            is_open = st.session_state.get(open_key) == i
+            if r["start"] is not None:
+                if c_btn.button("Hide context" if is_open else "Show in context", key=f"ctx_{result_id}_{i}"):
+                    st.session_state[open_key] = None if is_open else i
+                    st.rerun()
+            if is_open and r["start"] is not None:
+                st.caption("The wording in its place in the contract:")
+                st.markdown(context_html(text, r["start"], r["end"]), unsafe_allow_html=True)
 
 
 def main() -> None:
@@ -249,9 +274,9 @@ def main() -> None:
             st.error("The saved sample was made with different prompts from the current settings, "
                      "so it is not shown. Rebuild it with scripts/make_sample.py.")
             return
-        st.markdown(f"**Sample:** {html.escape(data['title'])}  \n"
-                    f"Source: {data['source']}. Saved result, shown instantly; no AI call is made.")
-        show_results(data["result"], text)
+        st.markdown(f"**Sample:** {SAMPLE_LABEL}")
+        st.caption(SAMPLE_SOURCE)
+        show_results(data["result"], text, "sample")
         return
 
     upload = st.file_uploader("Choose a contract", type=["txt", "docx"])
@@ -284,7 +309,7 @@ def main() -> None:
             status.update(label="Analysis complete", state="complete", expanded=False)
         results[key] = result
     if key in results:
-        show_results(results[key], text)
+        show_results(results[key], text, key[:16])
 
 
 if __name__ == "__main__":
