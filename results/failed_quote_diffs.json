@@ -1,0 +1,74 @@
+[
+ {
+  "title": "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+  "category": "Cap on Liability",
+  "model_quote": "NEITHER PARTY SHALL HAVE ANY LIABILITY WHATSOEVER TO THE OTHER PARTY OR ANY OTHER PERSON FOR OR ON ACCOUNT OF ANY INJURY, LOSS, OR DAMAGE, OF ANY KIND OR NATURE SUSTAINED BY, OR ANY DAMAGE ASSESSED OR ASSERTED AGAINST, OR ANY OTHER LIABILITY INCURRED BY OR IMPOSED UPON THE OTHER PARTY OR ANY OTHER PERSON, ARISING OUT OF OR IN CONNECTION WITH OR RESULTING FROM (A) THE PRODUCTION, USE, SALE, OFFER FOR SALE, OTHER DISPOSITIONS OR IMPORTATION OF ANY APPARATUS OR PRODUCT MADE BY THAT PARTY; OR (B) ANY ADVERTISING OR OTHER PROMOTIONAL ACTIVITIES MADE BY THAT PARTY WITH RESPECT TO ANY OF THE FOREGOING, AND EACH PARTY SHALL HOLD THE OTHER PARTY, AND ITS AFFILIATES, OFFICERS, AGENTS, OR EMPLOYEES, HARMLESS IN THE EVENT IT, OR ITS OFFICERS, AGENTS, OR EMPLOYEES, IS HELD LIABLE.",
+  "closest_contract_passage": "NEITHER PARTY SHALL HAVE ANY LIABILITY WHATSOEVER TO THE      12\n\n\n\n\n\n     OTHER PARTY OR ANY OTHER PERSON FOR OR ON ACCOUNT OF ANY INJURY, LOSS, OR DAMAGE, OF ANY KIND OR NATURE  SUSTAINED BY, OR ANY DAMAGE ASSESSED OR ASSERTED AGAINST, OR ANY OTHER LIABILITY INCURRED BY OR IMPOSED UPON  THE OTHER PARTY OR ANY OTHER PERSON, ARISING OUT OF OR IN CONNECTION WITH OR RESULTING FROM (A) THE PRODUCTION,  USE, SALE, OFFER FOR SALE, OTHER DISPOSITIONS OR IMPORTATION OF ANY APPARATUS OR PRODUCT MADE BY THAT PARTY;  OR (B) ANY ADVERTISING OR OTHER PROMOTIONAL ACTIVITIES MADE BY THAT PARTY WITH RESPECT TO ANY OF THE  FOREGOING, AND EACH PARTY SHALL HOLD THE OTHER PARTY, AND ITS AFFILIATES, OFFICERS, AGENTS, OR EMPLOYEES,  HARMLESS IN THE EVENT IT, OR ITS OFFICERS, AGENTS, OR EMPLOYEES, IS HELD LIABLE.",
+  "start": 26293,
+  "end": 27095,
+  "word_similarity": 0.996,
+  "differences": [
+   {
+    "change": "insert",
+    "model_quote": "",
+    "contract": "12"
+   }
+  ],
+  "passage_overlaps_cuad_gold": false,
+  "cuad_gold_for_type": false
+ },
+ {
+  "title": "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+  "category": "Anti-Assignment",
+  "model_quote": "This IP Agreement will be binding upon and inure to the benefit of the Parties hereto and their respective successors and permitted assigns, but will not be assignable or delegable by any Party without the prior written consent of the other Party. Notwithstanding the foregoing, a Party may transfer or assign its rights under this IP Agreement in connection with a merger, acquisition or sale of all or substantially all of its assets, on condition that it provides the other Party with notice of the transfer or assignment. Any attempted transfer in contravention of this Section 9.3 shall be null and void.",
+  "closest_contract_passage": "This IP Agreement will be binding upon and inure to the benefit of the Parties hereto and their respective successors and  permitted assigns, but will not be assignable or delegable by any Party without the prior written consent of the other Party. Notwithstanding the  foregoing, a Party may transfer or assign its rights under this IP Agreement in connection with a merger, acquisition or sale of all or substantially  all of its assets, on condition that it provides the      14\n\n\n\n\n\n     other Party with notice of the transfer or assignment. Any attempted transfer in contravention of this Section 9.3 shall be null and void.",
+  "start": 28845,
+  "end": 29475,
+  "word_similarity": 0.995,
+  "differences": [
+   {
+    "change": "insert",
+    "model_quote": "",
+    "contract": "14"
+   }
+  ],
+  "passage_overlaps_cuad_gold": true,
+  "cuad_gold_for_type": true
+ },
+ {
+  "title": "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+  "category": "Governing Law",
+  "model_quote": "This Agreement shad be deemed a contract made under and shall be construed in accordance with and governed by the laws ofthe State of Texas and that actions arising out ofthis Agreement may be litigated in courts having situs in Harris County, Texas.",
+  "closest_contract_passage": "This Agreement shad be deemed a contract made under and shall be construed in accordance with and governed by the laws ofthe State ofTexas  and that actions arising out ofthis Agreement may be litigated in courts having situs in Harris County, Texas.",
+  "start": 4395,
+  "end": 4645,
+  "word_similarity": 0.965,
+  "differences": [
+   {
+    "change": "replace",
+    "model_quote": "of Texas",
+    "contract": "ofTexas"
+   }
+  ],
+  "passage_overlaps_cuad_gold": true,
+  "cuad_gold_for_type": true
+ },
+ {
+  "title": "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT",
+  "category": "Termination for Convenience",
+  "model_quote": "Party B shall have the right to terminate this Agreement in advance without the prior written consent from Party A, by sending a written notice to Party A but Party A may not terminate or rescind this Agreement;",
+  "closest_contract_passage": "Party B shall have the right to terminate this Agreement in advance without the prior written consent from Party A, bysending a written notice to Party A but Party A may not terminate or rescind this Agreement;",
+  "start": 7316,
+  "end": 7526,
+  "word_similarity": 0.96,
+  "differences": [
+   {
+    "change": "replace",
+    "model_quote": "by sending",
+    "contract": "bysending"
+   }
+  ],
+  "passage_overlaps_cuad_gold": true,
+  "cuad_gold_for_type": true
+ }
+]
