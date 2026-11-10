@@ -8,7 +8,11 @@ No API calls: this file only scores. (Running the pipeline on eval is a separate
 
 Refuses to score (David's rules):
   1. a run that stopped early (complete = false), e.g. at the daily token limit;
-  2. a run whose model or prompt versions differ from the current config.py.
+  2. a run whose model or prompt versions differ from the current config.py;
+  3. a run with any part (first-pass chunk or second-pass check) that failed because of a
+     connection or server error, i.e. the model never answered. Rerun to retry those parts.
+Invalid model replies (the model answered, but the output was unusable after one retry) are NOT
+a reason to refuse: they are a real result (Needs review) and are counted in the metrics.
 
 Definitions used throughout
   cell          one (contract, clause type) pair. Gold present = CUAD has >= 1 span for it.
@@ -43,6 +47,27 @@ class RunNotScorable(Exception):
 
 
 # --- refusal rules -----------------------------------------------------------
+
+def _second_pass_errors(k: dict, kind: str) -> list[dict]:
+    return [f for f in k["findings"] if (f.get("second_pass_error") or "").startswith(kind)]
+
+
+def failed_parts(contracts: list[dict], kind: str) -> list[str]:
+    """Parts whose call ended in `kind` ("CallFailed" or "InvalidResponse"), one string each."""
+    out = []
+    for k in contracts:
+        out += [f"{k['title'][:50]}: chunk {e['chunk']}" for e in k.get("errors", [])
+                if e["error"].startswith(kind)]
+        out += [f"{k['title'][:50]}: second pass ({f['category']})" for f in _second_pass_errors(k, kind)]
+    return out
+
+
+def check_no_connection_failures(contracts: list[dict]) -> None:
+    parts = failed_parts(contracts, "CallFailed")
+    if parts:
+        raise RunNotScorable(f"{len(parts)} part(s) failed with a connection or server error, so the model "
+                             f"never answered them (e.g. {parts[0]}); rerun to retry them")
+
 
 def check_scorable(run_info: dict, cfg=config) -> None:
     if run_info.get("complete") is not True:
@@ -205,6 +230,7 @@ def second_pass_stats(cs: list[dict], tokens: dict) -> dict:
 
 def score(run: dict, categories: list[str] = config.CATEGORIES, cfg=config) -> dict:
     check_scorable(run["summary"]["run"], cfg)
+    check_no_connection_failures(run["contracts"])
     cs = list(cells(run["contracts"], categories))
 
     def block(sub):
@@ -226,7 +252,14 @@ def score(run: dict, categories: list[str] = config.CATEGORIES, cfg=config) -> d
                             "tp_without_overlapping_quote": "contract-level true positive where no predicted quote overlaps any gold span of that type"},
             "overall": block(cs),
             "per_category": {c: block([x for x in cs if x["category"] == c]) for c in categories},
-            "second_pass": second_pass_stats(cs, run["summary"]["tokens"])}
+            "second_pass": second_pass_stats(cs, run["summary"]["tokens"]),
+            "invalid_model_replies": {
+                "first_pass_chunks": sum(1 for k in run["contracts"] for e in k.get("errors", [])
+                                         if e["error"].startswith("InvalidResponse")),
+                "second_pass_checks": sum(len(_second_pass_errors(k, "InvalidResponse")) for k in run["contracts"]),
+                "parts": failed_parts(run["contracts"], "InvalidResponse"),
+                "note": "the model answered but the output was unusable after one retry; scored as a "
+                        "real result (Needs review), not retried"}}
 
 
 # --- disagreements for manual review -------------------------------------------

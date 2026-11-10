@@ -165,3 +165,114 @@ def test_log_is_written(env, monkeypatch, tmp_path):
     run_eval.main(["--run"])
     text = log.read_text(encoding="utf-8")
     assert "eval session 1" in text and "STOPPED at the daily limit" in text
+
+
+# --- connection/server failures vs invalid model replies ----------------------------------------
+
+class FlakyAPI(FakeAPI):
+    """Like FakeAPI, but attempt numbers in `fail` raise a connection error (the model never
+    answers), and attempt numbers in `invalid` get an answer that is not JSON."""
+
+    def __init__(self, fail=(), invalid=(), fail_from=None):
+        super().__init__()
+        self.fail, self.invalid, self.fail_from, self.attempts = set(fail), set(invalid), fail_from, 0
+
+    def __call__(self, messages, params, estimated_tokens):
+        self.attempts += 1
+        n = self.attempts
+        if n in self.fail or (self.fail_from is not None and n >= self.fail_from):
+            raise llm.CallFailed("APIConnectionError: Connection error. (fake)")
+        reply = super().__call__(messages, params, estimated_tokens)
+        if n in self.invalid:
+            reply.choices[0].message.content = "this is not JSON"
+        return reply
+
+
+FIVE = [f"k{i}" for i in range(1, 6)]
+FIVE_RECORDS = {t: record(t) for t in FIVE}
+
+
+def run5(api, out, monkeypatch):
+    monkeypatch.setattr(llm, "_call_once", api)
+    return run_eval.run_eval(FIVE, FIVE_RECORDS, out)
+
+
+def test_stops_after_three_connection_failures_in_a_row_then_resumes(env, monkeypatch, capsys):
+    # k1 needs 2 good calls. From attempt 3 every call fails: k2, k3 and k4 each fail once
+    # (one chunk each); the third failure in a row stops the run before k5.
+    api = FlakyAPI(fail_from=3)
+    data = run5(api, env, monkeypatch)
+    info = data["summary"]["run"]
+    assert info["complete"] is False and "connection problems" in info["stopped_reason"]
+    assert info["finished_titles"] == ["k1"]
+    assert api.attempts == 5                                    # k5 never tried
+    s = info["sessions"][0]
+    assert [x["title"] for x in s["not_finished_connection_errors"]] == ["k2", "k3"]  # k4 was abandoned mid-way
+    assert "STOPPED because of connection problems" in capsys.readouterr().out
+    with pytest.raises(evaluate.RunNotScorable, match="incomplete"):
+        evaluate.score(json.loads(env.read_text(encoding="utf-8")))
+
+    healthy = FakeAPI()
+    data = run5(healthy, env, monkeypatch)
+    info = data["summary"]["run"]
+    assert info["complete"] is True and info["finished_titles"] == FIVE
+    assert len(healthy.paid) == 8                               # k2..k5, 2 calls each; k1 not repeated
+    assert not set(api.paid) & set(healthy.paid)
+    evaluate.score(data)                                        # scoreable now
+
+
+def test_isolated_connection_failure_leaves_contract_unfinished(env, monkeypatch):
+    # attempt 3 = k2's first pass fails once; everything else works, so the run goes on
+    api = FlakyAPI(fail={3})
+    data = run5(api, env, monkeypatch)
+    info = data["summary"]["run"]
+    assert info["finished_titles"] == ["k1", "k3", "k4", "k5"]
+    assert info["complete"] is False and "retry" in info["stopped_reason"]
+    assert all(not k["failed_chunks"] for k in data["contracts"])   # no failed part is saved as a result
+
+    healthy = FakeAPI()
+    data = run5(healthy, env, monkeypatch)
+    assert data["summary"]["run"]["complete"] is True
+    assert len(healthy.paid) == 2                               # only k2 retried
+    evaluate.score(data)
+
+
+def test_second_pass_connection_failure_also_leaves_contract_unfinished(env, monkeypatch):
+    api = FlakyAPI(fail={2})                                    # k1's second pass
+    data = run5(api, env, monkeypatch)
+    info = data["summary"]["run"]
+    assert "k1" not in info["finished_titles"] and info["complete"] is False
+    assert "second pass" in info["sessions"][0]["not_finished_connection_errors"][0]["parts"][0]
+
+
+def test_invalid_model_reply_is_a_result_and_not_retried(env, monkeypatch):
+    # attempts 3 and 4 = k2's first pass and its one retry, both answered with non-JSON
+    api = FlakyAPI(invalid={3, 4})
+    data = run5(api, env, monkeypatch)
+    info = data["summary"]["run"]
+    assert info["complete"] is True and info["finished_titles"] == FIVE
+    k2 = data["contracts"][1]
+    assert k2["failed_chunks"] == [0] and k2["errors"][0]["error"].startswith("InvalidResponse")
+    assert all(c["status"] == "Needs review" for c in k2["clauses"])
+    assert info["sessions"][0]["invalid_model_replies"] == 1
+    m = evaluate.score(data)                                    # scored, not refused
+    assert m["invalid_model_replies"]["first_pass_chunks"] == 1
+
+    again = FakeAPI(budget=0)                                   # a rerun pays nothing: not retried
+    run5(again, env, monkeypatch)
+    assert again.paid == []
+
+
+def test_invalid_reply_resets_the_failure_count(env, monkeypatch):
+    # fail, fail, invalid (an answer), fail, fail: never 3 connection failures in a row
+    api = FlakyAPI(fail={3, 4, 7, 8}, invalid={5, 6})
+    data = run5(api, env, monkeypatch)
+    assert "connection problems" not in (data["summary"]["run"]["stopped_reason"] or "")
+
+
+def test_call_counter_is_removed_after_the_run(env, monkeypatch):
+    original = llm.chat_json
+    run5(FlakyAPI(fail_from=1), env, monkeypatch)       # stops with ConnectionTrouble
+    assert llm.chat_json is original
+    run5(FakeAPI(), env, monkeypatch)                    # completes normally
+    assert llm.chat_json is original

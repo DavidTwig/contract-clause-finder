@@ -1,0 +1,214 @@
+
+=== eval session 1 started 2026-11-10T08:10:07+00:00 | 0/20 finished, 20 to go | tokens today 0 / 200,000
+
+[1/20] AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement
+    tokens: prompt 2,260, completion 147 (reasoning 81) | today 2,407 / 200,000
+    tokens: prompt 2,711, completion 579 (reasoning 354) | today 5,697 / 200,000
+    throttle: 5,697 tokens in last minute, waiting 58s
+    tokens: prompt 1,793, completion 20 (reasoning 5) | today 7,510 / 200,000
+    tokens: prompt 853, completion 74 (reasoning 38) | today 8,437 / 200,000
+    tokens: prompt 1,097, completion 84 (reasoning 51) | today 9,618 / 200,000
+    throttle: 7,211 tokens in last minute, waiting 1s
+    tokens: prompt 777, completion 63 (reasoning 24) | today 10,458 / 200,000
+    tokens: prompt 805, completion 65 (reasoning 25) | today 11,328 / 200,000
+  Change of Control            Verified           1 verified finding(s)
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[2/20] ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreeme
+    throttle: 5,631 tokens in last minute, waiting 58s
+    tokens: prompt 2,767, completion 85 (reasoning 70) | today 14,180 / 200,000
+    throttle: 4,562 tokens in last minute, waiting 2s
+    tokens: prompt 2,548, completion 875 (reasoning 494) | today 17,603 / 200,000
+    tokens: prompt 922, completion 60 (reasoning 23) | today 18,585 / 200,000
+    throttle: 7,257 tokens in last minute, waiting 56s
+    tokens: prompt 879, completion 65 (reasoning 25) | today 19,529 / 200,000
+    tokens: prompt 916, completion 70 (reasoning 29) | today 20,515 / 200,000
+  Change of Control            Verified           1 verified finding(s)
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[3/20] BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement
+    throttle: 6,335 tokens in last minute, waiting 3s
+    tokens: prompt 2,343, completion 243 (reasoning 161) | today 23,101 / 200,000
+    throttle: 4,516 tokens in last minute, waiting 56s
+    tokens: prompt 3,174, completion 54 (reasoning 39) | today 26,329 / 200,000
+    throttle: 5,814 tokens in last minute, waiting 4s
+    tokens: prompt 2,768, completion 343 (reasoning 243) | today 29,440 / 200,000
+    throttle: 6,339 tokens in last minute, waiting 56s
+    tokens: prompt 1,325, completion 53 (reasoning 38) | today 30,818 / 200,000
+    tokens: prompt 701, completion 74 (reasoning 32) | today 31,593 / 200,000
+    tokens: prompt 1,024, completion 41 (reasoning 12) | today 32,658 / 200,000
+    tokens: prompt 1,058, completion 87 (reasoning 52) | today 33,803 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           2 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[4/20] CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT
+    throttle: 7,474 tokens in last minute, waiting 3s
+    throttle: 4,363 tokens in last minute, waiting 56s
+    tokens: prompt 2,853, completion 49 (reasoning 34) | today 36,705 / 200,000
+    throttle: 4,047 tokens in last minute, waiting 1s
+    tokens: prompt 2,887, completion 548 (reasoning 266) | today 40,140 / 200,000
+    throttle: 6,337 tokens in last minute, waiting 58s
+    tokens: prompt 1,271, completion 51 (reasoning 36) | today 41,462 / 200,000
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Needs review       1 finding(s) not confirmed by second pass
+  Cap on Liability             Needs review       1 finding(s) not confirmed by second pass
+  Anti-Assignment              Needs review       1 finding(s) not confirmed by second pass
+  Governing Law                Needs review       1 finding(s) not confirmed by second pass
+
+[5/20] CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0] could not be analysed
+  Governing Law                Needs review       chunk(s) [0] could not be analysed
+
+[6/20] EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO 
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1] could not be analysed
+
+[7/20] GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0] could not be analysed
+  Governing Law                Needs review       chunk(s) [0] could not be analysed
+
+[8/20] GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONI
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1, 2, 3, 4] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1, 2, 3, 4] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1, 2, 3, 4] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1, 2, 3, 4] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1, 2, 3, 4] could not be analysed
+
+[9/20] HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1, 2] could not be analysed
+
+[10/20] HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1] could not be analysed
+
+[11/20] MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0] could not be analysed
+  Governing Law                Needs review       chunk(s) [0] could not be analysed
+
+[12/20] NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1, 2] could not be analysed
+
+[13/20] ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0] could not be analysed
+  Governing Law                Needs review       chunk(s) [0] could not be analysed
+
+[14/20] PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1, 2] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1, 2] could not be analysed
+
+[15/20] PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0] could not be analysed
+  Governing Law                Needs review       chunk(s) [0] could not be analysed
+
+[16/20] PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMEN
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0] could not be analysed
+  Governing Law                Needs review       chunk(s) [0] could not be analysed
+
+[17/20] PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1] could not be analysed
+
+[18/20] SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connecte
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0] could not be analysed
+  Governing Law                Needs review       chunk(s) [0] could not be analysed
+
+[19/20] TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1] could not be analysed
+
+[20/20] TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT
+    call failed: APIConnectionError
+    call failed: APIConnectionError
+  Change of Control            Needs review       chunk(s) [0, 1] could not be analysed
+  Termination for Convenience  Needs review       chunk(s) [0, 1] could not be analysed
+  Cap on Liability             Needs review       chunk(s) [0, 1] could not be analysed
+  Anti-Assignment              Needs review       chunk(s) [0, 1] could not be analysed
+  Governing Law                Needs review       chunk(s) [0, 1] could not be analysed
+
+=== session end 2026-11-10T08:37:03+00:00 | 20/20 finished | complete=True | tokens today 41,462

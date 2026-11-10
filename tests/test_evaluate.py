@@ -221,3 +221,43 @@ def test_tp_without_overlapping_quote():
     rows = error_rows(make_run([e]), {"E": "x" * 400}, CATS)
     assert ("verified_no_cuad_match", "missed_span") == tuple(
         r["error_type"] for r in rows if r["category"] == GL)
+
+
+# --- connection/server failures refuse scoring; invalid model replies are scored ----------------
+
+def _with_errors(chunk_error=None, second_pass_error=None):
+    run = make_run()
+    a = run["contracts"][0]
+    if chunk_error:
+        a["errors"] = [{"chunk": 1, "error": chunk_error}]
+    if second_pass_error:
+        a["findings"][0] = {**a["findings"][0], "status": NEEDS_REVIEW, "verdict": None,
+                            "second_pass_error": second_pass_error}
+    return run
+
+
+def test_refuses_run_with_connection_failed_chunk():
+    run = _with_errors(chunk_error="CallFailed: APIConnectionError: Connection error.")
+    with pytest.raises(RunNotScorable, match="connection or server error"):
+        score(run, CATS, CFG)
+
+
+def test_refuses_run_with_server_failed_second_pass():
+    run = _with_errors(second_pass_error="CallFailed: InternalServerError: 503")
+    with pytest.raises(RunNotScorable, match="connection or server error"):
+        score(run, CATS, CFG)
+
+
+def test_invalid_model_replies_are_scored_and_counted():
+    run = _with_errors(chunk_error="InvalidResponse: attempt 1: bad json; attempt 2: bad json",
+                       second_pass_error="InvalidResponse: attempt 2: no verdict")
+    m = score(run, CATS, CFG)  # not refused
+    inv = m["invalid_model_replies"]
+    assert inv["first_pass_chunks"] == 1 and inv["second_pass_checks"] == 1 and len(inv["parts"]) == 2
+    # the finding whose check returned an invalid reply is Needs review, not Verified
+    assert m["second_pass"]["failed"] == 1
+
+
+def test_clean_run_reports_zero_invalid_replies(m):
+    assert m["invalid_model_replies"]["first_pass_chunks"] == 0
+    assert m["invalid_model_replies"]["second_pass_checks"] == 0
