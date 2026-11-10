@@ -1,0 +1,915 @@
+{
+ "run": {
+  "model": "openai/gpt-oss-120b",
+  "first_pass_prompt": "first_pass_v2",
+  "second_pass_prompt": "second_pass_v1",
+  "definitions": "category_definitions_v4",
+  "titles": [
+   "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement",
+   "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement",
+   "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement",
+   "CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT",
+   "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+   "EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO N.D. INC.",
+   "GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT",
+   "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+   "HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT",
+   "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT",
+   "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement",
+   "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT",
+   "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT",
+   "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+   "PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT",
+   "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+   "PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1",
+   "SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connected Power Generation Project in Yangqiao of~1",
+   "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT",
+   "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT"
+  ],
+  "complete": true,
+  "stopped_reason": null,
+  "finished_titles": [
+   "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement",
+   "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement",
+   "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement",
+   "CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT",
+   "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+   "EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO N.D. INC.",
+   "GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT",
+   "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+   "HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT",
+   "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT",
+   "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement",
+   "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT",
+   "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT",
+   "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+   "PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT",
+   "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+   "PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1",
+   "SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connected Power Generation Project in Yangqiao of~1",
+   "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT",
+   "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT"
+  ],
+  "sessions": [
+   {
+    "started": "2026-11-10T11:42:57+00:00",
+    "tokens_today_at_start": 41462,
+    "finished_this_session": [
+     "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement",
+     "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement",
+     "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement",
+     "CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT",
+     "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+     "EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO N.D. INC.",
+     "GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT",
+     "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+     "HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT",
+     "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT",
+     "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement",
+     "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT",
+     "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT",
+     "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+     "PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT",
+     "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+     "PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1",
+     "SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connected Power Generation Project in Yangqiao of~1",
+     "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT",
+     "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT"
+    ],
+    "not_finished_connection_errors": [],
+    "invalid_model_replies": 0,
+    "stopped_reason": null,
+    "finished": "2026-11-10T11:59:23+00:00",
+    "tokens_today_at_end": 147466
+   }
+  ]
+ },
+ "definitions": {
+  "span_match": "character-offset Jaccard >= 0.5",
+  "predicted_after": "cell status Verified",
+  "predicted_before": "any finding that passed the quote check",
+  "no_cuad_match": "failed quote, or span overlaps no gold span of its type (not yet judged wrong: see manual review)",
+  "tp_without_overlapping_quote": "contract-level true positive where no predicted quote overlaps any gold span of that type"
+ },
+ "overall": {
+  "contracts": 20,
+  "contract_level": {
+   "after_second_pass": {
+    "tp": 38,
+    "fp": 4,
+    "fn": 7,
+    "precision": {
+     "n": 38,
+     "of": 42,
+     "value": 0.9048
+    },
+    "recall": {
+     "n": 38,
+     "of": 45,
+     "value": 0.8444
+    },
+    "f1": 0.8736,
+    "tn": 51,
+    "tp_without_overlapping_quote": {
+     "n": 0,
+     "of": 38,
+     "value": 0.0
+    }
+   },
+   "before_second_pass": {
+    "tp": 38,
+    "fp": 4,
+    "fn": 7,
+    "precision": {
+     "n": 38,
+     "of": 42,
+     "value": 0.9048
+    },
+    "recall": {
+     "n": 38,
+     "of": 45,
+     "value": 0.8444
+    },
+    "f1": 0.8736,
+    "tn": 51,
+    "tp_without_overlapping_quote": {
+     "n": 0,
+     "of": 38,
+     "value": 0.0
+    }
+   }
+  },
+  "span_level": {
+   "after_second_pass": {
+    "precision": {
+     "n": 36,
+     "of": 45,
+     "value": 0.8
+    },
+    "recall": {
+     "n": 36,
+     "of": 64,
+     "value": 0.5625
+    },
+    "f1": 0.6606,
+    "recall_any_overlap": {
+     "n": 45,
+     "of": 64,
+     "value": 0.7031
+    }
+   },
+   "before_second_pass": {
+    "precision": {
+     "n": 36,
+     "of": 45,
+     "value": 0.8
+    },
+    "recall": {
+     "n": 36,
+     "of": 64,
+     "value": 0.5625
+    },
+    "f1": 0.6606,
+    "recall_any_overlap": {
+     "n": 45,
+     "of": 64,
+     "value": 0.7031
+    }
+   }
+  },
+  "quote_check": {
+   "raw_findings": 54,
+   "failed_quote": {
+    "n": 4,
+    "of": 54,
+    "value": 0.0741
+   },
+   "wrong_category": 0
+  },
+  "review_usefulness": {
+   "a_no_cuad_match_findings": {
+    "no_cuad_match": 9,
+    "moved_to_needs_review": {
+     "n": 4,
+     "of": 9,
+     "value": 0.4444
+    },
+    "left_as_verified": 5,
+    "caught_by": {
+     "quote_check": 4,
+     "second_pass_reject": 0,
+     "second_pass_failed": 0
+    },
+    "flagged_findings_with_no_cuad_match": {
+     "n": 4,
+     "of": 4,
+     "value": 1.0
+    }
+   },
+   "b_missed_clauses": {
+    "cells_with_gold": 45,
+    "missed": 7,
+    "landed_in_needs_review": 3,
+    "landed_in_not_found_check": 4
+   },
+   "not_found_results_correct": {
+    "n": 50,
+    "of": 54,
+    "value": 0.9259
+   }
+  },
+  "status_counts": {
+   "Verified": 42,
+   "Needs review": 4,
+   "Not found: check": 54
+  }
+ },
+ "per_category": {
+  "Change of Control": {
+   "contracts": 20,
+   "contract_level": {
+    "after_second_pass": {
+     "tp": 3,
+     "fp": 0,
+     "fn": 2,
+     "precision": {
+      "n": 3,
+      "of": 3,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 3,
+      "of": 5,
+      "value": 0.6
+     },
+     "f1": 0.75,
+     "tn": 15,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 3,
+      "value": 0.0
+     }
+    },
+    "before_second_pass": {
+     "tp": 3,
+     "fp": 0,
+     "fn": 2,
+     "precision": {
+      "n": 3,
+      "of": 3,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 3,
+      "of": 5,
+      "value": 0.6
+     },
+     "f1": 0.75,
+     "tn": 15,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 3,
+      "value": 0.0
+     }
+    }
+   },
+   "span_level": {
+    "after_second_pass": {
+     "precision": {
+      "n": 3,
+      "of": 3,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 3,
+      "of": 7,
+      "value": 0.4286
+     },
+     "f1": 0.6,
+     "recall_any_overlap": {
+      "n": 4,
+      "of": 7,
+      "value": 0.5714
+     }
+    },
+    "before_second_pass": {
+     "precision": {
+      "n": 3,
+      "of": 3,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 3,
+      "of": 7,
+      "value": 0.4286
+     },
+     "f1": 0.6,
+     "recall_any_overlap": {
+      "n": 4,
+      "of": 7,
+      "value": 0.5714
+     }
+    }
+   },
+   "quote_check": {
+    "raw_findings": 3,
+    "failed_quote": {
+     "n": 0,
+     "of": 3,
+     "value": 0.0
+    },
+    "wrong_category": 0
+   },
+   "review_usefulness": {
+    "a_no_cuad_match_findings": {
+     "no_cuad_match": 0,
+     "moved_to_needs_review": {
+      "n": 0,
+      "of": 0,
+      "value": null
+     },
+     "left_as_verified": 0,
+     "caught_by": {
+      "quote_check": 0,
+      "second_pass_reject": 0,
+      "second_pass_failed": 0
+     },
+     "flagged_findings_with_no_cuad_match": {
+      "n": 0,
+      "of": 0,
+      "value": null
+     }
+    },
+    "b_missed_clauses": {
+     "cells_with_gold": 5,
+     "missed": 2,
+     "landed_in_needs_review": 0,
+     "landed_in_not_found_check": 2
+    },
+    "not_found_results_correct": {
+     "n": 15,
+     "of": 17,
+     "value": 0.8824
+    }
+   },
+   "status_counts": {
+    "Verified": 3,
+    "Needs review": 0,
+    "Not found: check": 17
+   }
+  },
+  "Termination for Convenience": {
+   "contracts": 20,
+   "contract_level": {
+    "after_second_pass": {
+     "tp": 5,
+     "fp": 4,
+     "fn": 1,
+     "precision": {
+      "n": 5,
+      "of": 9,
+      "value": 0.5556
+     },
+     "recall": {
+      "n": 5,
+      "of": 6,
+      "value": 0.8333
+     },
+     "f1": 0.6667,
+     "tn": 10,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 5,
+      "value": 0.0
+     }
+    },
+    "before_second_pass": {
+     "tp": 5,
+     "fp": 4,
+     "fn": 1,
+     "precision": {
+      "n": 5,
+      "of": 9,
+      "value": 0.5556
+     },
+     "recall": {
+      "n": 5,
+      "of": 6,
+      "value": 0.8333
+     },
+     "f1": 0.6667,
+     "tn": 10,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 5,
+      "value": 0.0
+     }
+    }
+   },
+   "span_level": {
+    "after_second_pass": {
+     "precision": {
+      "n": 5,
+      "of": 10,
+      "value": 0.5
+     },
+     "recall": {
+      "n": 5,
+      "of": 7,
+      "value": 0.7143
+     },
+     "f1": 0.5882,
+     "recall_any_overlap": {
+      "n": 6,
+      "of": 7,
+      "value": 0.8571
+     }
+    },
+    "before_second_pass": {
+     "precision": {
+      "n": 5,
+      "of": 10,
+      "value": 0.5
+     },
+     "recall": {
+      "n": 5,
+      "of": 7,
+      "value": 0.7143
+     },
+     "f1": 0.5882,
+     "recall_any_overlap": {
+      "n": 6,
+      "of": 7,
+      "value": 0.8571
+     }
+    }
+   },
+   "quote_check": {
+    "raw_findings": 11,
+    "failed_quote": {
+     "n": 1,
+     "of": 11,
+     "value": 0.0909
+    },
+    "wrong_category": 0
+   },
+   "review_usefulness": {
+    "a_no_cuad_match_findings": {
+     "no_cuad_match": 5,
+     "moved_to_needs_review": {
+      "n": 1,
+      "of": 5,
+      "value": 0.2
+     },
+     "left_as_verified": 4,
+     "caught_by": {
+      "quote_check": 1,
+      "second_pass_reject": 0,
+      "second_pass_failed": 0
+     },
+     "flagged_findings_with_no_cuad_match": {
+      "n": 1,
+      "of": 1,
+      "value": 1.0
+     }
+    },
+    "b_missed_clauses": {
+     "cells_with_gold": 6,
+     "missed": 1,
+     "landed_in_needs_review": 1,
+     "landed_in_not_found_check": 0
+    },
+    "not_found_results_correct": {
+     "n": 10,
+     "of": 10,
+     "value": 1.0
+    }
+   },
+   "status_counts": {
+    "Verified": 9,
+    "Needs review": 1,
+    "Not found: check": 10
+   }
+  },
+  "Cap on Liability": {
+   "contracts": 20,
+   "contract_level": {
+    "after_second_pass": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 2,
+     "precision": {
+      "n": 4,
+      "of": 4,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 4,
+      "of": 6,
+      "value": 0.6667
+     },
+     "f1": 0.8,
+     "tn": 14,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 4,
+      "value": 0.0
+     }
+    },
+    "before_second_pass": {
+     "tp": 4,
+     "fp": 0,
+     "fn": 2,
+     "precision": {
+      "n": 4,
+      "of": 4,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 4,
+      "of": 6,
+      "value": 0.6667
+     },
+     "f1": 0.8,
+     "tn": 14,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 4,
+      "value": 0.0
+     }
+    }
+   },
+   "span_level": {
+    "after_second_pass": {
+     "precision": {
+      "n": 3,
+      "of": 4,
+      "value": 0.75
+     },
+     "recall": {
+      "n": 3,
+      "of": 16,
+      "value": 0.1875
+     },
+     "f1": 0.3,
+     "recall_any_overlap": {
+      "n": 6,
+      "of": 16,
+      "value": 0.375
+     }
+    },
+    "before_second_pass": {
+     "precision": {
+      "n": 3,
+      "of": 4,
+      "value": 0.75
+     },
+     "recall": {
+      "n": 3,
+      "of": 16,
+      "value": 0.1875
+     },
+     "f1": 0.3,
+     "recall_any_overlap": {
+      "n": 6,
+      "of": 16,
+      "value": 0.375
+     }
+    }
+   },
+   "quote_check": {
+    "raw_findings": 5,
+    "failed_quote": {
+     "n": 1,
+     "of": 5,
+     "value": 0.2
+    },
+    "wrong_category": 0
+   },
+   "review_usefulness": {
+    "a_no_cuad_match_findings": {
+     "no_cuad_match": 1,
+     "moved_to_needs_review": {
+      "n": 1,
+      "of": 1,
+      "value": 1.0
+     },
+     "left_as_verified": 0,
+     "caught_by": {
+      "quote_check": 1,
+      "second_pass_reject": 0,
+      "second_pass_failed": 0
+     },
+     "flagged_findings_with_no_cuad_match": {
+      "n": 1,
+      "of": 1,
+      "value": 1.0
+     }
+    },
+    "b_missed_clauses": {
+     "cells_with_gold": 6,
+     "missed": 2,
+     "landed_in_needs_review": 0,
+     "landed_in_not_found_check": 2
+    },
+    "not_found_results_correct": {
+     "n": 13,
+     "of": 15,
+     "value": 0.8667
+    }
+   },
+   "status_counts": {
+    "Verified": 4,
+    "Needs review": 1,
+    "Not found: check": 15
+   }
+  },
+  "Anti-Assignment": {
+   "contracts": 20,
+   "contract_level": {
+    "after_second_pass": {
+     "tp": 13,
+     "fp": 0,
+     "fn": 1,
+     "precision": {
+      "n": 13,
+      "of": 13,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     },
+     "f1": 0.963,
+     "tn": 6,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 13,
+      "value": 0.0
+     }
+    },
+    "before_second_pass": {
+     "tp": 13,
+     "fp": 0,
+     "fn": 1,
+     "precision": {
+      "n": 13,
+      "of": 13,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     },
+     "f1": 0.963,
+     "tn": 6,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 13,
+      "value": 0.0
+     }
+    }
+   },
+   "span_level": {
+    "after_second_pass": {
+     "precision": {
+      "n": 12,
+      "of": 15,
+      "value": 0.8
+     },
+     "recall": {
+      "n": 12,
+      "of": 20,
+      "value": 0.6
+     },
+     "f1": 0.6857,
+     "recall_any_overlap": {
+      "n": 16,
+      "of": 20,
+      "value": 0.8
+     }
+    },
+    "before_second_pass": {
+     "precision": {
+      "n": 12,
+      "of": 15,
+      "value": 0.8
+     },
+     "recall": {
+      "n": 12,
+      "of": 20,
+      "value": 0.6
+     },
+     "f1": 0.6857,
+     "recall_any_overlap": {
+      "n": 16,
+      "of": 20,
+      "value": 0.8
+     }
+    }
+   },
+   "quote_check": {
+    "raw_findings": 18,
+    "failed_quote": {
+     "n": 1,
+     "of": 18,
+     "value": 0.0556
+    },
+    "wrong_category": 0
+   },
+   "review_usefulness": {
+    "a_no_cuad_match_findings": {
+     "no_cuad_match": 2,
+     "moved_to_needs_review": {
+      "n": 1,
+      "of": 2,
+      "value": 0.5
+     },
+     "left_as_verified": 1,
+     "caught_by": {
+      "quote_check": 1,
+      "second_pass_reject": 0,
+      "second_pass_failed": 0
+     },
+     "flagged_findings_with_no_cuad_match": {
+      "n": 1,
+      "of": 1,
+      "value": 1.0
+     }
+    },
+    "b_missed_clauses": {
+     "cells_with_gold": 14,
+     "missed": 1,
+     "landed_in_needs_review": 1,
+     "landed_in_not_found_check": 0
+    },
+    "not_found_results_correct": {
+     "n": 6,
+     "of": 6,
+     "value": 1.0
+    }
+   },
+   "status_counts": {
+    "Verified": 13,
+    "Needs review": 1,
+    "Not found: check": 6
+   }
+  },
+  "Governing Law": {
+   "contracts": 20,
+   "contract_level": {
+    "after_second_pass": {
+     "tp": 13,
+     "fp": 0,
+     "fn": 1,
+     "precision": {
+      "n": 13,
+      "of": 13,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     },
+     "f1": 0.963,
+     "tn": 6,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 13,
+      "value": 0.0
+     }
+    },
+    "before_second_pass": {
+     "tp": 13,
+     "fp": 0,
+     "fn": 1,
+     "precision": {
+      "n": 13,
+      "of": 13,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     },
+     "f1": 0.963,
+     "tn": 6,
+     "tp_without_overlapping_quote": {
+      "n": 0,
+      "of": 13,
+      "value": 0.0
+     }
+    }
+   },
+   "span_level": {
+    "after_second_pass": {
+     "precision": {
+      "n": 13,
+      "of": 13,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     },
+     "f1": 0.963,
+     "recall_any_overlap": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     }
+    },
+    "before_second_pass": {
+     "precision": {
+      "n": 13,
+      "of": 13,
+      "value": 1.0
+     },
+     "recall": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     },
+     "f1": 0.963,
+     "recall_any_overlap": {
+      "n": 13,
+      "of": 14,
+      "value": 0.9286
+     }
+    }
+   },
+   "quote_check": {
+    "raw_findings": 17,
+    "failed_quote": {
+     "n": 1,
+     "of": 17,
+     "value": 0.0588
+    },
+    "wrong_category": 0
+   },
+   "review_usefulness": {
+    "a_no_cuad_match_findings": {
+     "no_cuad_match": 1,
+     "moved_to_needs_review": {
+      "n": 1,
+      "of": 1,
+      "value": 1.0
+     },
+     "left_as_verified": 0,
+     "caught_by": {
+      "quote_check": 1,
+      "second_pass_reject": 0,
+      "second_pass_failed": 0
+     },
+     "flagged_findings_with_no_cuad_match": {
+      "n": 1,
+      "of": 1,
+      "value": 1.0
+     }
+    },
+    "b_missed_clauses": {
+     "cells_with_gold": 14,
+     "missed": 1,
+     "landed_in_needs_review": 1,
+     "landed_in_not_found_check": 0
+    },
+    "not_found_results_correct": {
+     "n": 6,
+     "of": 6,
+     "value": 1.0
+    }
+   },
+   "status_counts": {
+    "Verified": 13,
+    "Needs review": 1,
+    "Not found: check": 6
+   }
+  }
+ },
+ "second_pass": {
+  "checks": 45,
+  "real_calls": 35,
+  "rejected": {
+   "n": 0,
+   "of": 45,
+   "value": 0.0
+  },
+  "failed": 0,
+  "token_share": {
+   "n": 35629,
+   "of": 147466,
+   "value": 0.2416
+  }
+ },
+ "invalid_model_replies": {
+  "first_pass_chunks": 0,
+  "second_pass_checks": 0,
+  "parts": [],
+  "note": "the model answered but the output was unusable after one retry; scored as a real result (Needs review), not retried"
+ }
+}

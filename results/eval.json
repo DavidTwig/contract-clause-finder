@@ -1,0 +1,4664 @@
+{
+ "summary": {
+  "run": {
+   "model": "openai/gpt-oss-120b",
+   "first_pass_prompt": "first_pass_v2",
+   "second_pass_prompt": "second_pass_v1",
+   "definitions": "category_definitions_v4",
+   "titles": [
+    "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement",
+    "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement",
+    "CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT",
+    "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+    "EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO N.D. INC.",
+    "GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT",
+    "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+    "HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT",
+    "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT",
+    "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement",
+    "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT",
+    "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT",
+    "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+    "PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT",
+    "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+    "PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1",
+    "SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connected Power Generation Project in Yangqiao of~1",
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT",
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT"
+   ],
+   "complete": true,
+   "stopped_reason": null,
+   "finished_titles": [
+    "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement",
+    "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement",
+    "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement",
+    "CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT",
+    "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+    "EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO N.D. INC.",
+    "GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT",
+    "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+    "HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT",
+    "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT",
+    "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement",
+    "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT",
+    "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT",
+    "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+    "PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT",
+    "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+    "PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1",
+    "SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connected Power Generation Project in Yangqiao of~1",
+    "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT",
+    "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT"
+   ],
+   "sessions": [
+    {
+     "started": "2026-11-10T11:42:57+00:00",
+     "tokens_today_at_start": 41462,
+     "finished_this_session": [
+      "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement",
+      "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement",
+      "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement",
+      "CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT",
+      "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+      "EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO N.D. INC.",
+      "GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT",
+      "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+      "HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT",
+      "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT",
+      "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement",
+      "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT",
+      "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT",
+      "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+      "PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT",
+      "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+      "PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1",
+      "SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connected Power Generation Project in Yangqiao of~1",
+      "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT",
+      "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT"
+     ],
+     "not_finished_connection_errors": [],
+     "invalid_model_replies": 0,
+     "stopped_reason": null,
+     "finished": "2026-11-10T11:59:23+00:00",
+     "tokens_today_at_end": 147466
+    }
+   ]
+  },
+  "tokens": {
+   "first_pass_all_calls": {
+    "prompt_tokens": 101324,
+    "completion_tokens": 10513,
+    "reasoning_tokens": 5978,
+    "total_tokens": 111837
+   },
+   "second_pass_all_calls": {
+    "prompt_tokens": 32546,
+    "completion_tokens": 3083,
+    "reasoning_tokens": 1485,
+    "total_tokens": 35629
+   },
+   "calls": {
+    "first_pass": 43,
+    "second_pass": 45
+   }
+  }
+ },
+ "contracts": [
+  {
+   "title": "AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement",
+   "chars": 20693,
+   "gold": {
+    "Change of Control": [
+     {
+      "start": 10014,
+      "end": 10201
+     },
+     {
+      "start": 10206,
+      "end": 10413
+     }
+    ],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 9752,
+      "end": 9870
+     },
+     {
+      "start": 14946,
+      "end": 15094
+     },
+     {
+      "start": 15095,
+      "end": 15243
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 11594,
+      "end": 11685
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 7659,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:10:08+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2260,
+      "completion_tokens": 147,
+      "reasoning_tokens": 81,
+      "total_tokens": 2407
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 6803,
+     "end": 17118,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:10:10+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2711,
+      "completion_tokens": 579,
+      "reasoning_tokens": 354,
+      "total_tokens": 3290
+     },
+     "n_findings": 3,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 15568,
+     "end": 20693,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:11:09+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1793,
+      "completion_tokens": 20,
+      "reasoning_tokens": 5,
+      "total_tokens": 1813
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "A six (6) months notice must be given by either party of their intention to terminate relations due to any reason other than breach of this agreement.",
+     "reason": "Specifies notice period to end contract without cause.",
+     "status": "passed",
+     "start": 1394,
+     "end": 1544
+    },
+    {
+     "chunk": 1,
+     "category": "Change of Control",
+     "model_category": "Change of Control",
+     "quote": "(e) If control of either party shall pass from the present shareholders or owners or controllers to other persons whom the other party shall in their absolute discretion regard as unsuitable. (f) Either parties voting stock is transferred to any third party to such extent as to result in a change in effective control of the company or its ownership or active management is changed in any other manner.",
+     "reason": "Specifies termination triggered by change of control of a party.",
+     "status": "passed",
+     "start": 10010,
+     "end": 10413
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The Manufacturer may not transfer or assign any of its rights or obligations under this agreement without the prior written consent of the Customer. The Customer may not freely transfer or assign its rights or obligations under this agreement without the prior written consent of the Manufacturer.",
+     "reason": "Requires prior written consent before either party can assign its rights or obligations.",
+     "status": "passed",
+     "start": 14946,
+     "end": 15243
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This agreement shall be governed by the Laws of England (English common and statutory Law).",
+     "reason": "States the governing law for the contract.",
+     "status": "passed",
+     "start": 11594,
+     "end": 11685
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "A six (6) months notice must be given by either party of their intention to terminate relations due to any reason other than breach of this agreement.",
+     "reason": "Specifies notice period to end contract without cause.",
+     "status": "Verified",
+     "start": 1394,
+     "end": 1544,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 0,
+     "section_end": 1684,
+     "verdict": "confirm",
+     "verdict_reason": "The clause allows either party to end the contract without cause by giving six months' notice.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:11:09+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 853,
+      "completion_tokens": 74,
+      "reasoning_tokens": 38,
+      "total_tokens": 927
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "A six (6) months notice must be given by either party of their intention to terminate relations due to any reason other than breach of this agreement."
+    },
+    {
+     "chunk": 1,
+     "category": "Change of Control",
+     "model_category": "Change of Control",
+     "quote": "(e) If control of either party shall pass from the present shareholders or owners or controllers to other persons whom the other party shall in their absolute discretion regard as unsuitable. (f) Either parties voting stock is transferred to any third party to such extent as to result in a change in effective control of the company or its ownership or active management is changed in any other manner.",
+     "reason": "Specifies termination triggered by change of control of a party.",
+     "status": "Verified",
+     "start": 10010,
+     "end": 10413,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 8681,
+     "section_end": 11690,
+     "verdict": "confirm",
+     "verdict_reason": "The passage sets termination rights triggered by a change of control of either party.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:11:09+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1097,
+      "completion_tokens": 84,
+      "reasoning_tokens": 51,
+      "total_tokens": 1181
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "(e) If control of either party shall pass from the present shareholders or owners or controllers to other persons whom the other party shall in their absolute discretion regard as unsuitable. (f) Either parties voting stock is transferred to any third party to such extent as to result in a change in effective control of the company or its ownership or active management is changed in any other manner."
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This agreement shall be governed by the Laws of England (English common and statutory Law).",
+     "reason": "States the governing law for the contract.",
+     "status": "Verified",
+     "start": 11594,
+     "end": 11685,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 10202,
+     "section_end": 12060,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly states the agreement is governed by the Laws of England, fulfilling the governing law clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:11:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 777,
+      "completion_tokens": 63,
+      "reasoning_tokens": 24,
+      "total_tokens": 840
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "This agreement shall be governed by the Laws of England (English common and statutory Law)."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The Manufacturer may not transfer or assign any of its rights or obligations under this agreement without the prior written consent of the Customer. The Customer may not freely transfer or assign its rights or obligations under this agreement without the prior written consent of the Manufacturer.",
+     "reason": "Requires prior written consent before either party can assign its rights or obligations.",
+     "status": "Verified",
+     "start": 14946,
+     "end": 15243,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 14590,
+     "section_end": 16369,
+     "verdict": "confirm",
+     "verdict_reason": "The clause requires prior written consent for any party to assign rights or obligations, fitting the anti-assignment definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:11:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 805,
+      "completion_tokens": 65,
+      "reasoning_tokens": 25,
+      "total_tokens": 870
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "The Manufacturer may not transfer or assign any of its rights or obligations under this agreement without the prior written consent of the Customer. The Customer may not freely transfer or assign its rights or obligations under this agreement without the prior written consent of the Manufacturer."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreement",
+   "chars": 18069,
+   "gold": {
+    "Change of Control": [
+     {
+      "start": 16928,
+      "end": 17477
+     }
+    ],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 16799,
+      "end": 16927
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 12927,
+      "end": 13082
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 10461,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:12:10+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2767,
+      "completion_tokens": 85,
+      "reasoning_tokens": 70,
+      "total_tokens": 2852
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 9359,
+     "end": 18069,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:12:13+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2548,
+      "completion_tokens": 875,
+      "reasoning_tokens": 494,
+      "total_tokens": 3423
+     },
+     "n_findings": 3,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement may not be assigned by Licensee without the consent of Licensor which consent shall not be unreasonably withheld. Notwithstanding the foregoing, no such consent of Licensor is required under this Agreement in the event of a Change of Control of Licensee so long as: (a) the resulting, surviving or transferee Person assumes all the obligations of the Licensee by operation of Law or pursuant to an agreement in form and substance reasonably satisfactory to the Licensor; and (b) the licenses granted herein shall not be transferrable or sublicensable to Affiliates of such Person unless such Affiliates were Affiliates of Licensee prior to such Change of Control.",
+     "reason": "Specifies consent needed for assignment, defining anti-assignment restriction.",
+     "status": "passed",
+     "start": 16799,
+     "end": 17477
+    },
+    {
+     "chunk": 1,
+     "category": "Change of Control",
+     "model_category": "Change of Control",
+     "quote": "This Agreement may not be assigned by Licensee without the consent of Licensor which consent shall not be unreasonably withheld. Notwithstanding the foregoing, no such consent of Licensor is required under this Agreement in the event of a Change of Control of Licensee so long as: (a) the resulting, surviving or transferee Person assumes all the obligations of the Licensee by operation of Law or pursuant to an agreement in form and substance reasonably satisfactory to the Licensor; and (b) the licenses granted herein shall not be transferrable or sublicensable to Affiliates of such Person unless such Affiliates were Affiliates of Licensee prior to such Change of Control.",
+     "reason": "Provides an exception to consent requirement upon a Change of Control.",
+     "status": "passed",
+     "start": 16799,
+     "end": 17477
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and interpreted in accordance with the laws of the State of Delaware without regard to its conflicts of law principles.",
+     "reason": "States the governing law for the contract.",
+     "status": "passed",
+     "start": 12927,
+     "end": 13082
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and interpreted in accordance with the laws of the State of Delaware without regard to its conflicts of law principles.",
+     "reason": "States the governing law for the contract.",
+     "status": "Verified",
+     "start": 12927,
+     "end": 13082,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 11698,
+     "section_end": 14043,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly states the agreement is governed by Delaware law, matching the governing law clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:12:14+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 922,
+      "completion_tokens": 60,
+      "reasoning_tokens": 23,
+      "total_tokens": 982
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "This Agreement shall be governed by and interpreted in accordance with the laws of the State of Delaware without regard to its conflicts of law principles."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement may not be assigned by Licensee without the consent of Licensor which consent shall not be unreasonably withheld. Notwithstanding the foregoing, no such consent of Licensor is required under this Agreement in the event of a Change of Control of Licensee so long as: (a) the resulting, surviving or transferee Person assumes all the obligations of the Licensee by operation of Law or pursuant to an agreement in form and substance reasonably satisfactory to the Licensor; and (b) the licenses granted herein shall not be transferrable or sublicensable to Affiliates of such Person unless such Affiliates were Affiliates of Licensee prior to such Change of Control.",
+     "reason": "Specifies consent needed for assignment, defining anti-assignment restriction.",
+     "status": "Verified",
+     "start": 16799,
+     "end": 17477,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 16453,
+     "section_end": 18069,
+     "verdict": "confirm",
+     "verdict_reason": "The passage requires Licensor consent for Licensee's assignment, defining an anti-assignment restriction with an exception.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:13:10+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 879,
+      "completion_tokens": 65,
+      "reasoning_tokens": 25,
+      "total_tokens": 944
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "This Agreement may not be assigned by Licensee without the consent of Licensor which consent shall not be unreasonably withheld. Notwithstanding the foregoing, no such consent of Licensor is required under this Agreement in the event of a Change of Control of Licensee so long as: (a) the resulting, surviving or transferee Person assumes all the obligations of the Licensee by operation of Law or pursuant to an agreement in form and substance reasonably satisfactory to the Licensor; and (b) the licenses granted herein shall not be transferrable or sublicensable to Affiliates of such Person unless such Affiliates were Affiliates of Licensee prior to such Change of Control."
+    },
+    {
+     "chunk": 1,
+     "category": "Change of Control",
+     "model_category": "Change of Control",
+     "quote": "This Agreement may not be assigned by Licensee without the consent of Licensor which consent shall not be unreasonably withheld. Notwithstanding the foregoing, no such consent of Licensor is required under this Agreement in the event of a Change of Control of Licensee so long as: (a) the resulting, surviving or transferee Person assumes all the obligations of the Licensee by operation of Law or pursuant to an agreement in form and substance reasonably satisfactory to the Licensor; and (b) the licenses granted herein shall not be transferrable or sublicensable to Affiliates of such Person unless such Affiliates were Affiliates of Licensee prior to such Change of Control.",
+     "reason": "Provides an exception to consent requirement upon a Change of Control.",
+     "status": "Verified",
+     "start": 16799,
+     "end": 17477,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 16453,
+     "section_end": 18069,
+     "verdict": "confirm",
+     "verdict_reason": "The passage sets conditions for assignment and waives consent requirement upon a Change of Control, fitting the defined clause type.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:13:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 916,
+      "completion_tokens": 70,
+      "reasoning_tokens": 29,
+      "total_tokens": 986
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "This Agreement may not be assigned by Licensee without the consent of Licensor which consent shall not be unreasonably withheld. Notwithstanding the foregoing, no such consent of Licensor is required under this Agreement in the event of a Change of Control of Licensee so long as: (a) the resulting, surviving or transferee Person assumes all the obligations of the Licensee by operation of Law or pursuant to an agreement in form and substance reasonably satisfactory to the Licensor; and (b) the licenses granted herein shall not be transferrable or sublicensable to Affiliates of such Person unless such Affiliates were Affiliates of Licensee prior to such Change of Control."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement",
+   "chars": 29629,
+   "gold": {
+    "Change of Control": [
+     {
+      "start": 23175,
+      "end": 23370
+     }
+    ],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 23076,
+      "end": 23174
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 20042,
+      "end": 20148
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 7616,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:13:15+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2343,
+      "completion_tokens": 243,
+      "reasoning_tokens": 161,
+      "total_tokens": 2586
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 6783,
+     "end": 18581,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:14:12+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 3174,
+      "completion_tokens": 54,
+      "reasoning_tokens": 39,
+      "total_tokens": 3228
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 17514,
+     "end": 27504,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:14:16+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2768,
+      "completion_tokens": 343,
+      "reasoning_tokens": 243,
+      "total_tokens": 3111
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 3,
+     "start": 26675,
+     "end": 29629,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:15:12+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1325,
+      "completion_tokens": 53,
+      "reasoning_tokens": 38,
+      "total_tokens": 1378
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The License Rights are exclusive to Berkshire and may not be assigned or in any way conveyed by Berkshire without Auriemma's express written consent, except in the event of a merger by Berkshire with another entity offering Banking Services.",
+     "reason": "Specifies consent required for assignment, with exception for merger.",
+     "status": "passed",
+     "start": 4420,
+     "end": 4662
+    },
+    {
+     "chunk": 2,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and construed in accordance with the laws of the State of Connecticut.",
+     "reason": "Specifies the governing law of the contract.",
+     "status": "passed",
+     "start": 20042,
+     "end": 20148
+    },
+    {
+     "chunk": 2,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "Berkshire may not assign this Agreement, in whole or in part, without Auriemma's written consent.",
+     "reason": "Requires consent before assignment, matching anti-assignment clause.",
+     "status": "passed",
+     "start": 23076,
+     "end": 23174
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The License Rights are exclusive to Berkshire and may not be assigned or in any way conveyed by Berkshire without Auriemma's express written consent, except in the event of a merger by Berkshire with another entity offering Banking Services.",
+     "reason": "Specifies consent required for assignment, with exception for merger.",
+     "status": "Verified",
+     "start": 4420,
+     "end": 4662,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 3485,
+     "section_end": 4721,
+     "verdict": "confirm",
+     "verdict_reason": "The clause requires Auriemma's written consent for Berkshire to assign the license rights, establishing an anti-assignment restriction.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:15:13+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 701,
+      "completion_tokens": 74,
+      "reasoning_tokens": 32,
+      "total_tokens": 775
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "The License Rights are exclusive to Berkshire and may not be assigned or in any way conveyed by Berkshire without Auriemma's  express written consent, except in the event of a merger by Berkshire with another entity offering Banking Services."
+    },
+    {
+     "chunk": 2,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and construed in accordance with the laws of the State of Connecticut.",
+     "reason": "Specifies the governing law of the contract.",
+     "status": "Verified",
+     "start": 20042,
+     "end": 20148,
+     "merged_from_chunks": [
+      2
+     ],
+     "section_start": 18581,
+     "section_end": 21625,
+     "verdict": "confirm",
+     "verdict_reason": "The text explicitly sets the governing law for the agreement.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:15:13+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1024,
+      "completion_tokens": 41,
+      "reasoning_tokens": 12,
+      "total_tokens": 1065
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "This Agreement shall be governed by and construed in accordance with the laws of the State of Connecticut."
+    },
+    {
+     "chunk": 2,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "Berkshire may not assign this Agreement, in whole or in part, without Auriemma's written consent.",
+     "reason": "Requires consent before assignment, matching anti-assignment clause.",
+     "status": "Verified",
+     "start": 23076,
+     "end": 23174,
+     "merged_from_chunks": [
+      2
+     ],
+     "section_start": 21625,
+     "section_end": 24643,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly requires Auriemma's written consent for Berkshire to assign the agreement.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T08:15:14+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1058,
+      "completion_tokens": 87,
+      "reasoning_tokens": 52,
+      "total_tokens": 1145
+     },
+     "second_pass_cached": true,
+     "text_in_contract": "Berkshire may not assign this Agreement,  in whole or in part, without Auriemma's written consent."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "2 verified finding(s)"
+     ],
+     "n_verified": 2,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT",
+   "chars": 25288,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [
+     {
+      "start": 11878,
+      "end": 12089
+     }
+    ],
+    "Cap on Liability": [
+     {
+      "start": 15988,
+      "end": 16843
+     },
+     {
+      "start": 16887,
+      "end": 17753
+     },
+     {
+      "start": 16887,
+      "end": 17755
+     },
+     {
+      "start": 19523,
+      "end": 19845
+     }
+    ],
+    "Anti-Assignment": [
+     {
+      "start": 19869,
+      "end": 20205
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 21783,
+      "end": 21958
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 11706,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:16:13+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2853,
+      "completion_tokens": 49,
+      "reasoning_tokens": 34,
+      "total_tokens": 2902
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 10881,
+     "end": 22792,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:16:15+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2887,
+      "completion_tokens": 548,
+      "reasoning_tokens": 266,
+      "total_tokens": 3435
+     },
+     "n_findings": 4,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 21960,
+     "end": 25288,
+     "status": "ok",
+     "cached": true,
+     "attempts": 0,
+     "usage": {
+      "time": "2026-11-10T08:17:14+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1271,
+      "completion_tokens": 51,
+      "reasoning_tokens": 36,
+      "total_tokens": 1322
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 1,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "either party may terminate this Agreement, effective at any time after the first three months of the Term, by giving 30 days' written notice of termination to the other party",
+     "reason": "Specifies unilateral termination after notice, matching termination for convenience",
+     "status": "passed",
+     "start": 11896,
+     "end": 12088
+    },
+    {
+     "chunk": 1,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "NEITHER PARTY WILL BE LIABLE FOR ANY SPECIAL, INDIRECT, CONSEQUENTIAL OR INCIDENTAL DAMAGES ARISING OUT OF OR RELATED TO THIS AGREEMENT, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY (INCLUDING NEGLIGENCE), AND EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+     "reason": "Limits liability by excluding certain damages, fitting a liability cap clause",
+     "status": "passed",
+     "start": 19523,
+     "end": 19845
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement may not be assigned by either party, except (a) to the transferee of substantially all of the business operations of such party (whether by asset sale, stock sale, merger or otherwise) or (b) to any entity that controls, is controlled by or is under common control with such party.",
+     "reason": "Requires consent/conditions for assignment, matching anti-assignment clause",
+     "status": "passed",
+     "start": 19869,
+     "end": 20205
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement will be construed in accordance with and governed by the laws of the State of California, without regard to principles of  conflicts of law.",
+     "reason": "States the governing law of the contract",
+     "status": "passed",
+     "start": 21783,
+     "end": 21958
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 1,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "either party may terminate this Agreement, effective at any time after the first three months of the Term, by giving 30 days' written notice of termination to the other party",
+     "reason": "Specifies unilateral termination after notice, matching termination for convenience",
+     "status": "Verified",
+     "start": 11896,
+     "end": 12088,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 11706,
+     "section_end": 12632,
+     "verdict": "confirm",
+     "verdict_reason": "Allows unilateral termination after three months with notice, without cause.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:42:58+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 634,
+      "completion_tokens": 69,
+      "reasoning_tokens": 39,
+      "total_tokens": 703
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "either party may terminate this Agreement,      effective at any time after the first three\n\n       months of the Term, by giving 30 days' written notice of termination to the      other party"
+    },
+    {
+     "chunk": 1,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "NEITHER PARTY WILL BE LIABLE FOR ANY SPECIAL, INDIRECT, CONSEQUENTIAL OR INCIDENTAL DAMAGES ARISING OUT OF OR RELATED TO THIS AGREEMENT, HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY (INCLUDING NEGLIGENCE), AND EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+     "reason": "Limits liability by excluding certain damages, fitting a liability cap clause",
+     "status": "Verified",
+     "start": 19523,
+     "end": 19845,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 19490,
+     "section_end": 19847,
+     "verdict": "confirm",
+     "verdict_reason": "The passage excludes special, indirect, consequential, and incidental damages, constituting a limitation of liability clause.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:42:58+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 560,
+      "completion_tokens": 72,
+      "reasoning_tokens": 33,
+      "total_tokens": 632
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "NEITHER PARTY WILL BE LIABLE FOR ANY SPECIAL,           INDIRECT, CONSEQUENTIAL OR INCIDENTAL DAMAGES ARISING OUT OF OR           RELATED TO THIS AGREEMENT, HOWEVER CAUSED AND ON ANY THEORY OF           LIABILITY (INCLUDING NEGLIGENCE), AND EVEN IF SUCH PARTY HAS BEEN           ADVISED OF THE POSSIBILITY OF SUCH DAMAGES."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement may not be assigned by either party, except (a) to the transferee of substantially all of the business operations of such party (whether by asset sale, stock sale, merger or otherwise) or (b) to any entity that controls, is controlled by or is under common control with such party.",
+     "reason": "Requires consent/conditions for assignment, matching anti-assignment clause",
+     "status": "Verified",
+     "start": 19869,
+     "end": 20205,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 19847,
+     "section_end": 20207,
+     "verdict": "confirm",
+     "verdict_reason": "The passage restricts assignment and specifies limited permissible assignments, fitting the anti-assignment clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:42:59+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 537,
+      "completion_tokens": 62,
+      "reasoning_tokens": 25,
+      "total_tokens": 599
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement may not be assigned by either party, except           (a) to the transferee of substantially all of the business operations           of such party (whether by asset sale, stock sale, merger or otherwise)           or (b) to any entity that controls, is controlled by or is under           common control with such party."
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement will be construed in accordance with and governed by the laws of the State of California, without regard to principles of  conflicts of law.",
+     "reason": "States the governing law of the contract",
+     "status": "Verified",
+     "start": 21783,
+     "end": 21958,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 21754,
+     "section_end": 21960,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly states the agreement is governed by California law, fitting the governing law clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:42:59+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 462,
+      "completion_tokens": 53,
+      "reasoning_tokens": 16,
+      "total_tokens": 515
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement will be construed in accordance with           and governed by the laws of the State of California, without regard to           principles of  conflicts of law."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3",
+   "chars": 1707,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [],
+    "Governing Law": []
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 1707,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:42:59+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1067,
+      "completion_tokens": 22,
+      "reasoning_tokens": 7,
+      "total_tokens": 1089
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [],
+   "findings": [],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO N.D. INC.",
+   "chars": 20637,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [
+     {
+      "start": 5267,
+      "end": 5611
+     },
+     {
+      "start": 6090,
+      "end": 6226
+     }
+    ],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 10425,
+      "end": 10543
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 10840,
+      "end": 11175
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 11323,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:43:00+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2853,
+      "completion_tokens": 532,
+      "reasoning_tokens": 307,
+      "total_tokens": 3385
+     },
+     "n_findings": 4,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 10409,
+     "end": 20637,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:44:00+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2579,
+      "completion_tokens": 382,
+      "reasoning_tokens": 242,
+      "total_tokens": 2961
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Contractor may terminate this Agreement and his or her engagement for any reason at any time upon providing 30 days advance notice in writing to Emerald.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "passed",
+     "start": 5267,
+     "end": 5424
+    },
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Company may terminate this Agreement and the engagement of the Contractor without Cause at any time on 30 days prior written notice.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "passed",
+     "start": 6090,
+     "end": 6226
+    },
+    {
+     "chunk": 0,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement is not assignable by any party to the Agreement without the prior written consent of the other parties.",
+     "reason": "Requires consent before any assignment.",
+     "status": "passed",
+     "start": 10425,
+     "end": 10543
+    },
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement will be governed by and construed inaccordance with the laws of British Columbia and the federal laws of Canada applicable in British Columbia, and the parties irrevocably submit to and accept generally and unconditionally the exclusive jurisdiction of the courts and appellate courts of British Columbia in that regard.",
+     "reason": "Specifies the governing law of the contract.",
+     "status": "passed",
+     "start": 10840,
+     "end": 11175
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement is not assignable by any party to the Agreement without the prior written consent of the other parties.",
+     "reason": "Specifies consent required before any party may assign the agreement.",
+     "status": "passed",
+     "start": 10425,
+     "end": 10543
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement will be governed by and construed inaccordance with the laws of British Columbia and the federal laws of Canada applicable in British Columbia, and the parties irrevocably submit to and accept generally and unconditionally the exclusive jurisdiction of the courts and appellate courts of British Columbia in that regard.",
+     "reason": "States the law that governs interpretation of the contract.",
+     "status": "passed",
+     "start": 10840,
+     "end": 11175
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Contractor may terminate this Agreement and his or her engagement for any reason at any time upon providing 30 days advance notice in writing to Emerald.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "Verified",
+     "start": 5267,
+     "end": 5424,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 5205,
+     "section_end": 5613,
+     "verdict": "confirm",
+     "verdict_reason": "It permits unilateral termination without cause upon notice, fitting termination for convenience.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:44:00+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 514,
+      "completion_tokens": 53,
+      "reasoning_tokens": 21,
+      "total_tokens": 567
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The Contractor may terminate this Agreement and his or her engagement for any reason at any time upon providing 30 days advance notice in writing to Emerald."
+    },
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Company may terminate this Agreement and the engagement of the Contractor without Cause at any time on 30 days prior written notice.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "Verified",
+     "start": 6090,
+     "end": 6226,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 6027,
+     "section_end": 6375,
+     "verdict": "confirm",
+     "verdict_reason": "It allows the Company to end the agreement without cause by giving 30 days written notice.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:44:01+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 495,
+      "completion_tokens": 48,
+      "reasoning_tokens": 12,
+      "total_tokens": 543
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The Company may terminate this Agreement and the engagement of the Contractor without Cause at any time on 30 days prior written notice."
+    },
+    {
+     "chunk": 0,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement is not assignable by any party to the Agreement without the prior written consent of the other parties.",
+     "reason": "Requires consent before any assignment.",
+     "status": "Verified",
+     "start": 10425,
+     "end": 10543,
+     "merged_from_chunks": [
+      0,
+      1
+     ],
+     "section_start": 10409,
+     "section_end": 10709,
+     "verdict": "confirm",
+     "verdict_reason": "The passage requires prior written consent before any party may assign the agreement, defining an anti-assignment clause.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:44:01+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 473,
+      "completion_tokens": 56,
+      "reasoning_tokens": 17,
+      "total_tokens": 529
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement is not assignable by any party to the Agreement without the prior written consent of the other parties."
+    },
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement will be governed by and construed inaccordance with the laws of British Columbia and the federal laws of Canada applicable in British Columbia, and the parties irrevocably submit to and accept generally and unconditionally the exclusive jurisdiction of the courts and appellate courts of British Columbia in that regard.",
+     "reason": "Specifies the governing law of the contract.",
+     "status": "Verified",
+     "start": 10840,
+     "end": 11175,
+     "merged_from_chunks": [
+      0,
+      1
+     ],
+     "section_start": 10806,
+     "section_end": 11177,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly states the governing law and jurisdiction for the agreement.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:44:01+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 516,
+      "completion_tokens": 47,
+      "reasoning_tokens": 16,
+      "total_tokens": 563
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement will be governed by and construed inaccordance with the laws of British Columbia and the federal laws of Canada applicable in British Columbia, and the parties irrevocably submit to and accept generally and unconditionally the exclusive jurisdiction of the courts and appellate courts of British Columbia in that regard."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "2 verified finding(s)"
+     ],
+     "n_verified": 2,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT",
+   "chars": 3892,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [],
+    "Governing Law": []
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 3892,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:44:02+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1655,
+      "completion_tokens": 239,
+      "reasoning_tokens": 163,
+      "total_tokens": 1894
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "This Agreement shall remain in full force and effect until revoked by any party hereto in a signed writing provided to each other party hereto, and then only with respect to such revoking party.",
+     "reason": "Allows any party to terminate without cause by written notice.",
+     "status": "passed",
+     "start": 1364,
+     "end": 1558
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "This Agreement shall remain in full force and effect until revoked by any party hereto in a signed writing provided to each other party hereto, and then only with respect to such revoking party.",
+     "reason": "Allows any party to terminate without cause by written notice.",
+     "status": "Verified",
+     "start": 1364,
+     "end": 1558,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 11,
+     "section_end": 3034,
+     "verdict": "confirm",
+     "verdict_reason": "Allows any party to terminate unilaterally by written notice, fitting termination for convenience.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:45:01+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1202,
+      "completion_tokens": 112,
+      "reasoning_tokens": 76,
+      "total_tokens": 1314
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement shall remain in full force and effect until revoked by any party hereto in a signed writing provided to each other party hereto, and then only with respect to such revoking party."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONICS INC. and GSI TECHNOLOGY, INC.",
+   "chars": 37337,
+   "gold": {
+    "Change of Control": [
+     {
+      "start": 29094,
+      "end": 29318
+     },
+     {
+      "start": 29337,
+      "end": 29391
+     }
+    ],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 28845,
+      "end": 29093
+     },
+     {
+      "start": 29392,
+      "end": 29475
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 31321,
+      "end": 31566
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 9776,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:45:03+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2952,
+      "completion_tokens": 102,
+      "reasoning_tokens": 87,
+      "total_tokens": 3054
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 8263,
+     "end": 15516,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:45:03+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2180,
+      "completion_tokens": 62,
+      "reasoning_tokens": 47,
+      "total_tokens": 2242
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 14382,
+     "end": 24331,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:46:04+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2695,
+      "completion_tokens": 77,
+      "reasoning_tokens": 62,
+      "total_tokens": 2772
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 3,
+     "start": 22983,
+     "end": 32840,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:46:07+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2789,
+      "completion_tokens": 1100,
+      "reasoning_tokens": 644,
+      "total_tokens": 3889
+     },
+     "n_findings": 3,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 4,
+     "start": 32040,
+     "end": 37337,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:47:05+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1965,
+      "completion_tokens": 59,
+      "reasoning_tokens": 44,
+      "total_tokens": 2024
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 3,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This IP Agreement and the legal relations among the Parties will be governed by and construed in accordance with the rules and substantive Laws of the State of California, United States of America, without regard to conflicts of law provisions.",
+     "reason": "Specifies the governing law of the contract.",
+     "status": "passed",
+     "start": 31321,
+     "end": 31566
+    },
+    {
+     "chunk": 3,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This IP Agreement will be binding upon and inure to the benefit of the Parties hereto and their respective successors and permitted assigns, but will not be assignable or delegable by any Party without the prior written consent of the other Party. Notwithstanding the foregoing, a Party may transfer or assign its rights under this IP Agreement in connection with a merger, acquisition or sale of all or substantially all of its assets, on condition that it provides the other Party with notice of the transfer or assignment. Any attempted transfer in contravention of this Section 9.3 shall be null and void.",
+     "reason": "Requires consent or notice for assignment, limiting assignability.",
+     "status": "failed_quote",
+     "start": null,
+     "end": null
+    },
+    {
+     "chunk": 3,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "NEITHER PARTY SHALL HAVE ANY LIABILITY WHATSOEVER TO THE OTHER PARTY OR ANY OTHER PERSON FOR OR ON ACCOUNT OF ANY INJURY, LOSS, OR DAMAGE, OF ANY KIND OR NATURE SUSTAINED BY, OR ANY DAMAGE ASSESSED OR ASSERTED AGAINST, OR ANY OTHER LIABILITY INCURRED BY OR IMPOSED UPON THE OTHER PARTY OR ANY OTHER PERSON, ARISING OUT OF OR IN CONNECTION WITH OR RESULTING FROM (A) THE PRODUCTION, USE, SALE, OFFER FOR SALE, OTHER DISPOSITIONS OR IMPORTATION OF ANY APPARATUS OR PRODUCT MADE BY THAT PARTY; OR (B) ANY ADVERTISING OR OTHER PROMOTIONAL ACTIVITIES MADE BY THAT PARTY WITH RESPECT TO ANY OF THE FOREGOING, AND EACH PARTY SHALL HOLD THE OTHER PARTY, AND ITS AFFILIATES, OFFICERS, AGENTS, OR EMPLOYEES, HARMLESS IN THE EVENT IT, OR ITS OFFICERS, AGENTS, OR EMPLOYEES, IS HELD LIABLE.",
+     "reason": "Limits liability to the extent of no liability whatsoever, acting as a liability cap.",
+     "status": "failed_quote",
+     "start": null,
+     "end": null
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 3,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This IP Agreement and the legal relations among the Parties will be governed by and construed in accordance with the rules and substantive Laws of the State of California, United States of America, without regard to conflicts of law provisions.",
+     "reason": "Specifies the governing law of the contract.",
+     "status": "Verified",
+     "start": 31321,
+     "end": 31566,
+     "merged_from_chunks": [
+      3
+     ],
+     "section_start": 30933,
+     "section_end": 32840,
+     "verdict": "confirm",
+     "verdict_reason": "The text explicitly states the agreement is governed by California law, fitting the governing law clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:47:05+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 836,
+      "completion_tokens": 48,
+      "reasoning_tokens": 11,
+      "total_tokens": 884
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This IP Agreement and the legal relations among the Parties will be governed by and construed in accordance with the rules and  substantive Laws of the State of California, United States of America, without regard to conflicts of law provisions."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Needs review",
+     "reasons": [
+      "1 quote(s) failed the quote check"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 1
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Needs review",
+     "reasons": [
+      "1 quote(s) failed the quote check"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 1
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT",
+   "chars": 30968,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 26321,
+      "end": 26619
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 24511,
+      "end": 24889
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 10649,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:47:07+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 3192,
+      "completion_tokens": 53,
+      "reasoning_tokens": 38,
+      "total_tokens": 3245
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 9583,
+     "end": 19884,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:48:06+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2970,
+      "completion_tokens": 111,
+      "reasoning_tokens": 96,
+      "total_tokens": 3081
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 19084,
+     "end": 30968,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:48:09+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 3101,
+      "completion_tokens": 492,
+      "reasoning_tokens": 304,
+      "total_tokens": 3593
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 2,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "HERC may not assign, transfer, sublicense or delegate any of its rights hereunder or delegate its obligations hereunder without the prior written consent of HSI, and any such purported assignment, transfer, sublicense or delegation, in the absence of such consent, shall be void and without effect.",
+     "reason": "Specifies consent required for any assignment, matching anti-assignment clause.",
+     "status": "passed",
+     "start": 26321,
+     "end": 26619
+    },
+    {
+     "chunk": 2,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement and all disputes or controversies arising out of or relating to this Agreement or the transactions contemplated hereby shall be governed by, and construed in accordance with, the internal laws of the State of New York, without regard to the laws of any other jurisdiction that might be applied because of the conflicts of laws principles of the State of New York.",
+     "reason": "States that New York internal laws govern the contract.",
+     "status": "passed",
+     "start": 24511,
+     "end": 24889
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 2,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement and all disputes or controversies arising out of or relating to this Agreement or the transactions contemplated hereby shall be governed by, and construed in accordance with, the internal laws of the State of New York, without regard to the laws of any other jurisdiction that might be applied because of the conflicts of laws principles of the State of New York.",
+     "reason": "States that New York internal laws govern the contract.",
+     "status": "Verified",
+     "start": 24511,
+     "end": 24889,
+     "merged_from_chunks": [
+      2
+     ],
+     "section_start": 23328,
+     "section_end": 26321,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly sets the governing law for the agreement as New York law.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:49:07+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1114,
+      "completion_tokens": 52,
+      "reasoning_tokens": 19,
+      "total_tokens": 1166
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement and all disputes or controversies arising out of or relating to this Agreement or the transactions contemplated hereby shall be governed by, and construed in accordance with, the internal laws of the State of New York, without regard to the laws of any other jurisdiction that might be applied because of the conflicts of laws principles of the State of New York."
+    },
+    {
+     "chunk": 2,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "HERC may not assign, transfer, sublicense or delegate any of its rights hereunder or delegate its obligations hereunder without the prior written consent of HSI, and any such purported assignment, transfer, sublicense or delegation, in the absence of such consent, shall be void and without effect.",
+     "reason": "Specifies consent required for any assignment, matching anti-assignment clause.",
+     "status": "Verified",
+     "start": 26321,
+     "end": 26619,
+     "merged_from_chunks": [
+      2
+     ],
+     "section_start": 24896,
+     "section_end": 27926,
+     "verdict": "confirm",
+     "verdict_reason": "The clause requires prior written consent for any assignment, transfer, sublicense, or delegation, fitting the anti-assignment definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:49:07+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 1141,
+      "completion_tokens": 63,
+      "reasoning_tokens": 21,
+      "total_tokens": 1204
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "HERC may not assign, transfer, sublicense or delegate any of its rights hereunder or delegate its obligations hereunder without the prior written consent of HSI, and any such purported assignment, transfer, sublicense or delegation, in the absence of such consent, shall be void and without effect."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT",
+   "chars": 20008,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [
+     {
+      "start": 18172,
+      "end": 18336
+     }
+    ],
+    "Cap on Liability": [
+     {
+      "start": 11380,
+      "end": 11583
+     },
+     {
+      "start": 12564,
+      "end": 12768
+     }
+    ],
+    "Anti-Assignment": [
+     {
+      "start": 17341,
+      "end": 17432
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 16867,
+      "end": 17117
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 10401,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:49:10+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2437,
+      "completion_tokens": 78,
+      "reasoning_tokens": 63,
+      "total_tokens": 2515
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 9481,
+     "end": 20008,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:50:08+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2810,
+      "completion_tokens": 263,
+      "reasoning_tokens": 103,
+      "total_tokens": 3073
+     },
+     "n_findings": 3,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 1,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Parties may terminate its performance of related obligations under this Agreement within thirty (30) days of receipt by the Party of written termination notice.",
+     "reason": "Allows termination without cause by notice period.",
+     "status": "passed",
+     "start": 18172,
+     "end": 18336
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The rights and obligations provided by this Agreement shall not be assignable by any Party.",
+     "reason": "Prohibits assignment without consent.",
+     "status": "passed",
+     "start": 17341,
+     "end": 17432
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement and its application and interpretation will be governed exclusively by its terms and the laws of the State of Nevada (USA), and excluding any conflicts of law provisions which would require the application of any law other than Nevada.",
+     "reason": "Specifies the governing law jurisdiction.",
+     "status": "passed",
+     "start": 16867,
+     "end": 17117
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement and its application and interpretation will be governed exclusively by its terms and the laws of the State of Nevada (USA), and excluding any conflicts of law provisions which would require the application of any law other than Nevada.",
+     "reason": "Specifies the governing law jurisdiction.",
+     "status": "Verified",
+     "start": 16867,
+     "end": 17117,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 15454,
+     "section_end": 17849,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly sets the governing law as Nevada, fitting the governing law clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:50:08+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 893,
+      "completion_tokens": 51,
+      "reasoning_tokens": 16,
+      "total_tokens": 944
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement and its application and interpretation will be governed exclusively by its terms and the laws of the State of Nevada (USA), and excluding any conflicts of law provisions which would require the application of any law other than Nevada."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The rights and obligations provided by this Agreement shall not be assignable by any Party.",
+     "reason": "Prohibits assignment without consent.",
+     "status": "Verified",
+     "start": 17341,
+     "end": 17432,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 16064,
+     "section_end": 17849,
+     "verdict": "confirm",
+     "verdict_reason": "The passage expressly prohibits assignment by any party, meeting the anti-assignment definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:50:09+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 754,
+      "completion_tokens": 85,
+      "reasoning_tokens": 51,
+      "total_tokens": 839
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The rights and obligations provided by this Agreement shall not be assignable by any Party."
+    },
+    {
+     "chunk": 1,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Parties may terminate its performance of related obligations under this Agreement within thirty (30) days of receipt by the Party of written termination notice.",
+     "reason": "Allows termination without cause by notice period.",
+     "status": "Verified",
+     "start": 18172,
+     "end": 18336,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 17849,
+     "section_end": 19824,
+     "verdict": "confirm",
+     "verdict_reason": "Clause permits termination without cause by notice, fitting termination for convenience definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:50:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 802,
+      "completion_tokens": 85,
+      "reasoning_tokens": 53,
+      "total_tokens": 887
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The Parties may terminate its performance of related obligations under this Agreement within thirty (30) days of receipt by the Party of written termination notice."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement",
+   "chars": 8321,
+   "gold": {
+    "Change of Control": [
+     {
+      "start": 2551,
+      "end": 2746
+     }
+    ],
+    "Termination for Convenience": [
+     {
+      "start": 4564,
+      "end": 4741
+     }
+    ],
+    "Cap on Liability": [
+     {
+      "start": 5044,
+      "end": 5227
+     }
+    ],
+    "Anti-Assignment": [
+     {
+      "start": 5238,
+      "end": 5338
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 5349,
+      "end": 5474
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 8321,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:51:10+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2408,
+      "completion_tokens": 450,
+      "reasoning_tokens": 209,
+      "total_tokens": 2858
+     },
+     "n_findings": 5,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Change of Control",
+     "model_category": "Change of Control",
+     "quote": "This Agreement shall terminate in the event of a significant change in the management or ownership of mPhase or in the event mPhase is the subject of any bankruptcy proceedings.",
+     "reason": "Specifies termination upon change of control or bankruptcy.",
+     "status": "passed",
+     "start": 2551,
+     "end": 2746
+    },
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "Either party wishing to terminate the Agreement must give written notice to the other party at least thirty (30) days prior to the desired date of termination.",
+     "reason": "Allows termination without cause by notice.",
+     "status": "passed",
+     "start": 4564,
+     "end": 4741
+    },
+    {
+     "chunk": 0,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "Neither Party shall be liable to the other for special, incidental, or consequential damages, even if such Party has been advised of the possibility of such damages.",
+     "reason": "Limits liability for certain types of damages.",
+     "status": "passed",
+     "start": 5044,
+     "end": 5227
+    },
+    {
+     "chunk": 0,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement shall not be assigned by mPhase without the prior written consent of Lucent.",
+     "reason": "Requires consent before assignment.",
+     "status": "passed",
+     "start": 5238,
+     "end": 5338
+    },
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "The validity, construction and performance of this Agreement shall be governed by the laws of the State of New York.",
+     "reason": "Specifies the governing law.",
+     "status": "passed",
+     "start": 5349,
+     "end": 5474
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Change of Control",
+     "model_category": "Change of Control",
+     "quote": "This Agreement shall terminate in the event of a significant change in the management or ownership of mPhase or in the event mPhase is the subject of any bankruptcy proceedings.",
+     "reason": "Specifies termination upon change of control or bankruptcy.",
+     "status": "Verified",
+     "start": 2551,
+     "end": 2746,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 2542,
+     "section_end": 2748,
+     "verdict": "confirm",
+     "verdict_reason": "Specifies termination if ownership/management changes, fitting change of control definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:51:10+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 505,
+      "completion_tokens": 67,
+      "reasoning_tokens": 34,
+      "total_tokens": 572
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement shall terminate in the event of a significant change in          the management or ownership of mPhase or in the event mPhase is the          subject of any bankruptcy proceedings."
+    },
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "Either party wishing to terminate the Agreement must give written notice to the other party at least thirty (30) days prior to the desired date of termination.",
+     "reason": "Allows termination without cause by notice.",
+     "status": "Verified",
+     "start": 4564,
+     "end": 4741,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 4204,
+     "section_end": 4743,
+     "verdict": "confirm",
+     "verdict_reason": "Provides unilateral notice-based termination without cause",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:51:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 537,
+      "completion_tokens": 58,
+      "reasoning_tokens": 33,
+      "total_tokens": 595
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "Either party wishing to terminate          the Agreement must give written notice to the other party at least          thirty (30) days prior to the desired date of termination."
+    },
+    {
+     "chunk": 0,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "Neither Party shall be liable to the other for special, incidental, or consequential damages, even if such Party has been advised of the possibility of such damages.",
+     "reason": "Limits liability for certain types of damages.",
+     "status": "Verified",
+     "start": 5044,
+     "end": 5227,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 5035,
+     "section_end": 5229,
+     "verdict": "confirm",
+     "verdict_reason": "It limits liability by excluding special, incidental, and consequential damages, constituting a liability cap.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:51:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 504,
+      "completion_tokens": 58,
+      "reasoning_tokens": 21,
+      "total_tokens": 562
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "Neither Party shall be liable to the other for special, incidental, or          consequential damages, even if such Party has been advised of the          possibility of such damages."
+    },
+    {
+     "chunk": 0,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement shall not be assigned by mPhase without the prior written consent of Lucent.",
+     "reason": "Requires consent before assignment.",
+     "status": "Verified",
+     "start": 5238,
+     "end": 5338,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 5229,
+     "section_end": 5340,
+     "verdict": "confirm",
+     "verdict_reason": "It explicitly requires prior written consent before mPhase can assign the agreement.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:51:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 436,
+      "completion_tokens": 55,
+      "reasoning_tokens": 23,
+      "total_tokens": 491
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement shall not be assigned by mPhase without the prior          written consent of Lucent."
+    },
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "The validity, construction and performance of this Agreement shall be governed by the laws of the State of New York.",
+     "reason": "Specifies the governing law.",
+     "status": "Verified",
+     "start": 5349,
+     "end": 5474,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 5340,
+     "section_end": 5476,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly states the governing law for the agreement.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:51:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 439,
+      "completion_tokens": 36,
+      "reasoning_tokens": 7,
+      "total_tokens": 475
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The validity, construction and performance of this Agreement shall be          governed by the laws of the State of New York."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT",
+   "chars": 21955,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 15322,
+      "end": 15537
+     },
+     {
+      "start": 15574,
+      "end": 15741
+     }
+    ],
+    "Governing Law": []
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 9960,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:52:11+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2685,
+      "completion_tokens": 50,
+      "reasoning_tokens": 35,
+      "total_tokens": 2735
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 8615,
+     "end": 19924,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:52:14+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2927,
+      "completion_tokens": 376,
+      "reasoning_tokens": 237,
+      "total_tokens": 3303
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 18825,
+     "end": 21955,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:53:12+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1311,
+      "completion_tokens": 64,
+      "reasoning_tokens": 49,
+      "total_tokens": 1375
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "During the term of this agreement NVOS shall have the right to assign, transfer or sell all or part of its interest in the agreement upon the terms and conditions herein, subject only to prior written notice to HGF.",
+     "reason": "Requires notice before assignment, matching anti-assignment clause.",
+     "status": "passed",
+     "start": 15322,
+     "end": 15537
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "During the term of this agreement HGF shall have the right, upon written approval of NVOS, to assign, transfer or sell all or part of their interest in this agreement.",
+     "reason": "Requires consent before assignment, matching anti-assignment clause.",
+     "status": "passed",
+     "start": 15574,
+     "end": 15741
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "During the term of this agreement NVOS shall have the right to assign, transfer or sell all or part of its interest in the agreement upon the terms and conditions herein, subject only to prior written notice to HGF.",
+     "reason": "Requires notice before assignment, matching anti-assignment clause.",
+     "status": "Verified",
+     "start": 15322,
+     "end": 15537,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 14649,
+     "section_end": 16522,
+     "verdict": "confirm",
+     "verdict_reason": "The clause requires prior written notice to HGF before NVOS can assign its interest, meeting the anti-assignment definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:53:13+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 842,
+      "completion_tokens": 173,
+      "reasoning_tokens": 131,
+      "total_tokens": 1015
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "During the term of this agreement NVOS shall have the right to assign, transfer or sell all or part of its interest in the agreement upon the terms and conditions herein, subject only to prior written notice to HGF."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "During the term of this agreement HGF shall have the right, upon written approval of NVOS, to assign, transfer or sell all or part of their interest in this agreement.",
+     "reason": "Requires consent before assignment, matching anti-assignment clause.",
+     "status": "Verified",
+     "start": 15574,
+     "end": 15741,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 14649,
+     "section_end": 17215,
+     "verdict": "confirm",
+     "verdict_reason": "The clause requires NVOS's written approval before HGF can assign, establishing a consent requirement.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:53:13+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 980,
+      "completion_tokens": 116,
+      "reasoning_tokens": 79,
+      "total_tokens": 1096
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "During the term of this agreement HGF shall have the right, upon written approval of NVOS, to assign, transfer or sell all or part of their interest in this agreement."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "2 verified finding(s)"
+     ],
+     "n_verified": 2,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT",
+   "chars": 5879,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [],
+    "Governing Law": []
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 5879,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:53:15+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2345,
+      "completion_tokens": 28,
+      "reasoning_tokens": 13,
+      "total_tokens": 2373
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [],
+   "findings": [],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT",
+   "chars": 22730,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [
+     {
+      "start": 4722,
+      "end": 4825
+     }
+    ],
+    "Cap on Liability": [],
+    "Anti-Assignment": [
+     {
+      "start": 19744,
+      "end": 19960
+     },
+     {
+      "start": 19961,
+      "end": 20135
+     },
+     {
+      "start": 20451,
+      "end": 20814
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 20166,
+      "end": 20421
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 9774,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:54:14+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2482,
+      "completion_tokens": 138,
+      "reasoning_tokens": 84,
+      "total_tokens": 2620
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 8716,
+     "end": 20423,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:54:16+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2802,
+      "completion_tokens": 206,
+      "reasoning_tokens": 56,
+      "total_tokens": 3008
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 2,
+     "start": 19573,
+     "end": 22730,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:54:17+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1287,
+      "completion_tokens": 402,
+      "reasoning_tokens": 230,
+      "total_tokens": 1689
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Consultant may terminate the Consultation Period at any time upon thirty (30) days' written notice.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "passed",
+     "start": 4722,
+     "end": 4825
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement is personal to the Consultant and the Consultant shall not have the right to assign any of Consultant's rights or delegate any of Consultant's duties without the express written consent of the Company.",
+     "reason": "Specifies consent required for any assignment of rights or duties.",
+     "status": "passed",
+     "start": 19744,
+     "end": 19960
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and construed in accordance with the laws of the Commonwealth of Massachusetts without giving effect to any choice or conflict of law provision or rule that would cause the application of laws of any other jurisdiction.",
+     "reason": "States the governing law for the contract.",
+     "status": "passed",
+     "start": 20166,
+     "end": 20421
+    },
+    {
+     "chunk": 2,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement is personal to the Consultant and the Consultant shall not have the right to assign any of Consultant's rights or delegate any of Consultant's duties without the express written consent of the Company. Any non-consented-to assignment or delegation, whether express or implied or by operation of law, shall be void and shall constitute a breach and a default by the Consultant.",
+     "reason": "Specifies consent required for any assignment of rights or duties.",
+     "status": "passed",
+     "start": 19744,
+     "end": 20135
+    },
+    {
+     "chunk": 2,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and construed in accordance with the laws of the Commonwealth of Massachusetts without giving effect to any choice or conflict of law provision or rule that would cause the application of laws of any other jurisdiction.",
+     "reason": "Identifies the governing law jurisdiction.",
+     "status": "passed",
+     "start": 20166,
+     "end": 20421
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "The Consultant may terminate the Consultation Period at any time upon thirty (30) days' written notice.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "Verified",
+     "start": 4722,
+     "end": 4825,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 3567,
+     "section_end": 4827,
+     "verdict": "confirm",
+     "verdict_reason": "The quoted clause allows the Consultant to end the agreement unilaterally with notice, i.e., termination for convenience.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:55:15+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 666,
+      "completion_tokens": 94,
+      "reasoning_tokens": 52,
+      "total_tokens": 760
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The Consultant may terminate the Consultation Period at any time upon thirty (30) days' written notice."
+    },
+    {
+     "chunk": 2,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement is personal to the Consultant and the Consultant shall not have the right to assign any of Consultant's rights or delegate any of Consultant's duties without the express written consent of the Company. Any non-consented-to assignment or delegation, whether express or implied or by operation of law, shall be void and shall constitute a breach and a default by the Consultant.",
+     "reason": "Specifies consent required for any assignment of rights or duties.",
+     "status": "Verified",
+     "start": 19744,
+     "end": 20135,
+     "merged_from_chunks": [
+      1,
+      2
+     ],
+     "section_start": 19709,
+     "section_end": 20147,
+     "verdict": "confirm",
+     "verdict_reason": "It requires the company's written consent for any assignment or delegation, prohibiting unconsented assignments.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:55:15+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 553,
+      "completion_tokens": 57,
+      "reasoning_tokens": 20,
+      "total_tokens": 610
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement is personal to the Consultant and the Consultant shall not have the right to assign any of Consultant's rights or delegate any of Consultant's duties without the express written consent of the Company. Any non-consented-to assignment or delegation, whether express or implied or by operation of law, shall be void and shall constitute a breach and a default by the Consultant."
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and construed in accordance with the laws of the Commonwealth of Massachusetts without giving effect to any choice or conflict of law provision or rule that would cause the application of laws of any other jurisdiction.",
+     "reason": "States the governing law for the contract.",
+     "status": "Verified",
+     "start": 20166,
+     "end": 20421,
+     "merged_from_chunks": [
+      1,
+      2
+     ],
+     "section_start": 20147,
+     "section_end": 20423,
+     "verdict": "confirm",
+     "verdict_reason": "It explicitly states the governing law for the agreement.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:55:15+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 482,
+      "completion_tokens": 40,
+      "reasoning_tokens": 12,
+      "total_tokens": 522
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement shall be governed by and construed in accordance with the laws of the Commonwealth of Massachusetts without giving effect to any choice or conflict of law provision or rule that would cause the application of laws of any other jurisdiction."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT",
+   "chars": 972,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [],
+    "Governing Law": []
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 972,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:55:16+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 949,
+      "completion_tokens": 22,
+      "reasoning_tokens": 7,
+      "total_tokens": 971
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [],
+   "findings": [],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMENT",
+   "chars": 5030,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [],
+    "Governing Law": [
+     {
+      "start": 4395,
+      "end": 4645
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 5030,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:55:17+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1756,
+      "completion_tokens": 214,
+      "reasoning_tokens": 130,
+      "total_tokens": 1970
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shad be deemed a contract made under and shall be construed in accordance with and governed by the laws ofthe State of Texas and that actions arising out ofthis Agreement may be litigated in courts having situs in Harris County, Texas.",
+     "reason": "Specifies the governing law as Texas.",
+     "status": "failed_quote",
+     "start": null,
+     "end": null
+    }
+   ],
+   "findings": [],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Needs review",
+     "reasons": [
+      "1 quote(s) failed the quote check"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 1
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1",
+   "chars": 19851,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [
+     {
+      "start": 9968,
+      "end": 10277
+     },
+     {
+      "start": 10278,
+      "end": 10499
+     },
+     {
+      "start": 10501,
+      "end": 10786
+     }
+    ],
+    "Anti-Assignment": [
+     {
+      "start": 14780,
+      "end": 14910
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 14946,
+      "end": 15133
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 11980,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:56:16+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 3185,
+      "completion_tokens": 462,
+      "reasoning_tokens": 162,
+      "total_tokens": 3647
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 11122,
+     "end": 19851,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:56:18+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2453,
+      "completion_tokens": 171,
+      "reasoning_tokens": 58,
+      "total_tokens": 2624
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "Notice expressing a desire to terminate this Agreement will be sent by certified mail to the address indicated above.  Said termination will be effective as of the last day of the month in which this anniversary occurs.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "passed",
+     "start": 4078,
+     "end": 4297
+    },
+    {
+     "chunk": 0,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "LIABILITY UNDER THIS AGREEMENT FROM ANY AND ALL CAUSES, INCLUDING, BUT NOT LIMITED TO, PROGRAM MALFUNCTION OR OPERATIONAL NEGLIGENCE, SHALL BE LIMITED TO GENERAL MONEY DAMAGES IN AN AMOUNT NOT TO EXCEED THE TOTAL CHARGES PAID BY ABW FOR THE SERVICES DURING THE MOST RECENT TWELVE (12) MONTHS OF THE AGREEMENT. SUCH LIMITATION SHALL BE THE EXTENT OF PCQ OR ABW'S LIABILITY REGARDLESS OF THE FORM IN WHICH ANY LEGAL OR EQUITABLE ACTION MAY BE BROUGHT AGAINST PCQ OR ABW, AND THE FOREGOING SHALL CONSTITUTE PCQ'S OR ABW'S SOLE REMEDY.  IN NO EVENT WILL EITHER PARTY BE RESPONSIBLE FOR LOST PROFITS OR SPECIAL INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES WHICH ABW OR PCQ INCUR OR EXPERIENCE ON ACCOUNT OF ENTERING INTO OR RELYING ON THIS AGREEMENT, EVEN IF PCQ OR ABW HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+     "reason": "Sets a monetary cap and excludes consequential damages.",
+     "status": "passed",
+     "start": 9968,
+     "end": 10786
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement or any rights or obligations granted hereunder may not be assigned by ABW without the prior written consent of PCQ.",
+     "reason": "Specifies consent required before assignment.",
+     "status": "passed",
+     "start": 14780,
+     "end": 14910
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be interpreted, construed and enforced in all respects in accordance with the laws of the State of Illinois, except with regards to its rules regarding choice of law.",
+     "reason": "States the governing law of the contract.",
+     "status": "passed",
+     "start": 14946,
+     "end": 15133
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "Notice expressing a desire to terminate this Agreement will be sent by certified mail to the address indicated above.  Said termination will be effective as of the last day of the month in which this anniversary occurs.",
+     "reason": "Allows termination without cause by giving notice.",
+     "status": "Verified",
+     "start": 4078,
+     "end": 4297,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 3822,
+     "section_end": 4299,
+     "verdict": "confirm",
+     "verdict_reason": "Provides unilateral notice-based termination without cause, fitting termination for convenience.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:56:19+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 544,
+      "completion_tokens": 83,
+      "reasoning_tokens": 52,
+      "total_tokens": 627
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "Notice expressing a desire to terminate this Agreement will be sent by certified mail to the address indicated above.  Said termination will be effective as of the last day of the month in which this anniversary occurs."
+    },
+    {
+     "chunk": 0,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "LIABILITY UNDER THIS AGREEMENT FROM ANY AND ALL CAUSES, INCLUDING, BUT NOT LIMITED TO, PROGRAM MALFUNCTION OR OPERATIONAL NEGLIGENCE, SHALL BE LIMITED TO GENERAL MONEY DAMAGES IN AN AMOUNT NOT TO EXCEED THE TOTAL CHARGES PAID BY ABW FOR THE SERVICES DURING THE MOST RECENT TWELVE (12) MONTHS OF THE AGREEMENT. SUCH LIMITATION SHALL BE THE EXTENT OF PCQ OR ABW'S LIABILITY REGARDLESS OF THE FORM IN WHICH ANY LEGAL OR EQUITABLE ACTION MAY BE BROUGHT AGAINST PCQ OR ABW, AND THE FOREGOING SHALL CONSTITUTE PCQ'S OR ABW'S SOLE REMEDY.  IN NO EVENT WILL EITHER PARTY BE RESPONSIBLE FOR LOST PROFITS OR SPECIAL INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES WHICH ABW OR PCQ INCUR OR EXPERIENCE ON ACCOUNT OF ENTERING INTO OR RELYING ON THIS AGREEMENT, EVEN IF PCQ OR ABW HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.",
+     "reason": "Sets a monetary cap and excludes consequential damages.",
+     "status": "Verified",
+     "start": 9968,
+     "end": 10786,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 9959,
+     "section_end": 10788,
+     "verdict": "confirm",
+     "verdict_reason": "The passage sets a monetary cap and excludes certain damages, fitting the cap on liability definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:56:19+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 850,
+      "completion_tokens": 60,
+      "reasoning_tokens": 24,
+      "total_tokens": 910
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "LIABILITY UNDER THIS AGREEMENT FROM ANY AND ALL CAUSES, INCLUDING, BUT NOT LIMITED TO, PROGRAM MALFUNCTION OR OPERATIONAL NEGLIGENCE, SHALL BE LIMITED TO GENERAL MONEY DAMAGES IN AN AMOUNT NOT TO EXCEED THE TOTAL CHARGES PAID BY ABW FOR THE SERVICES DURING THE MOST RECENT TWELVE (12) MONTHS OF THE AGREEMENT. SUCH LIMITATION SHALL BE THE EXTENT OF PCQ OR ABW'S LIABILITY REGARDLESS OF THE FORM IN WHICH ANY LEGAL OR EQUITABLE ACTION MAY BE BROUGHT AGAINST PCQ OR ABW, AND THE FOREGOING SHALL CONSTITUTE PCQ'S OR ABW'S SOLE REMEDY.  IN NO EVENT WILL EITHER PARTY BE RESPONSIBLE FOR LOST PROFITS OR SPECIAL INDIRECT, INCIDENTAL OR CONSEQUENTIAL DAMAGES WHICH ABW OR PCQ INCUR OR EXPERIENCE ON ACCOUNT OF ENTERING INTO OR RELYING ON THIS AGREEMENT, EVEN IF PCQ OR ABW HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "This Agreement or any rights or obligations granted hereunder may not be assigned by ABW without the prior written consent of PCQ.",
+     "reason": "Specifies consent required before assignment.",
+     "status": "Verified",
+     "start": 14780,
+     "end": 14910,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 14713,
+     "section_end": 14912,
+     "verdict": "confirm",
+     "verdict_reason": "It requires prior written consent before ABW can assign the agreement, fitting the anti-assignment definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:57:17+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 472,
+      "completion_tokens": 61,
+      "reasoning_tokens": 23,
+      "total_tokens": 533
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement or any rights or obligations granted hereunder may not be assigned by ABW without the prior written consent of PCQ."
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be interpreted, construed and enforced in all respects in accordance with the laws of the State of Illinois, except with regards to its rules regarding choice of law.",
+     "reason": "States the governing law of the contract.",
+     "status": "Verified",
+     "start": 14946,
+     "end": 15133,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 14912,
+     "section_end": 15498,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly sets the governing law as Illinois, fulfilling the governing law clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:57:17+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 534,
+      "completion_tokens": 60,
+      "reasoning_tokens": 25,
+      "total_tokens": 594
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement shall be interpreted, construed and enforced in all respects in accordance with the laws of the State of Illinois, except with regards to its rules regarding choice of law."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connected Power Generation Project in Yangqiao of~1",
+   "chars": 2811,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [],
+    "Anti-Assignment": [],
+    "Governing Law": []
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 2811,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:57:17+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1187,
+      "completion_tokens": 20,
+      "reasoning_tokens": 5,
+      "total_tokens": 1207
+     },
+     "n_findings": 0,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [],
+   "findings": [],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT",
+   "chars": 17786,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [],
+    "Cap on Liability": [
+     {
+      "start": 13249,
+      "end": 13458
+     },
+     {
+      "start": 14347,
+      "end": 15072
+     },
+     {
+      "start": 15089,
+      "end": 15283
+     },
+     {
+      "start": 16352,
+      "end": 16556
+     }
+    ],
+    "Anti-Assignment": [
+     {
+      "start": 15975,
+      "end": 16212
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 16229,
+      "end": 16335
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 11244,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:57:19+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2665,
+      "completion_tokens": 229,
+      "reasoning_tokens": 157,
+      "total_tokens": 2894
+     },
+     "n_findings": 1,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 10062,
+     "end": 17786,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:58:19+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 1986,
+      "completion_tokens": 338,
+      "reasoning_tokens": 109,
+      "total_tokens": 2324
+     },
+     "n_findings": 3,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "Customer, upon thirty days prior written notice, may cancel this Agreement at the end of the Initial Term and thereafter on each anniversary of the end of the Initial Term.",
+     "reason": "Provides a party the right to terminate without cause by giving notice.",
+     "status": "passed",
+     "start": 6506,
+     "end": 6698
+    },
+    {
+     "chunk": 1,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "MMMW's entire liability and the Customer's sole and exclusive remedy for claims related to or arising out of this Agreement for any cause and regardless of the form of action, whether in contract or tort, including negligence and strict liability, shall be the remedies set forth in Section 8, provided that if MMMW fails after repeated attempts to perform those remedies, MMMW's entire liability shall be the Customer's actual, direct damages such as would be provided in a court of law, not to exceed the charge for service for the item that caused the damages.",
+     "reason": "Limits liability to the charge for service.",
+     "status": "passed",
+     "start": 14347,
+     "end": 15072
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The Customer shall not assign or transfer its rights or obligations under this Agreement except with MMMW's prior written consent; any prohibited assignment or transfer shall be void.",
+     "reason": "Requires prior written consent for assignment.",
+     "status": "passed",
+     "start": 15975,
+     "end": 16212
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be interpreted in accordance with the laws of the State of Indiana.",
+     "reason": "Specifies the governing law.",
+     "status": "passed",
+     "start": 16229,
+     "end": 16335
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "Customer, upon thirty days prior written notice, may cancel this Agreement at the end of the Initial Term and thereafter on each anniversary of the end of the Initial Term.",
+     "reason": "Provides a party the right to terminate without cause by giving notice.",
+     "status": "Verified",
+     "start": 6506,
+     "end": 6698,
+     "merged_from_chunks": [
+      0
+     ],
+     "section_start": 5017,
+     "section_end": 7336,
+     "verdict": "confirm",
+     "verdict_reason": "It grants the customer unilateral termination with notice, fitting termination for convenience.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:58:19+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 870,
+      "completion_tokens": 96,
+      "reasoning_tokens": 64,
+      "total_tokens": 966
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "Customer, upon thirty days prior written notice, may cancel this           Agreement at the end of the Initial Term and thereafter on each           anniversary of the end of the Initial Term."
+    },
+    {
+     "chunk": 1,
+     "category": "Cap on Liability",
+     "model_category": "Cap on Liability",
+     "quote": "MMMW's entire liability and the Customer's sole and exclusive remedy for claims related to or arising out of this Agreement for any cause and regardless of the form of action, whether in contract or tort, including negligence and strict liability, shall be the remedies set forth in Section 8, provided that if MMMW fails after repeated attempts to perform those remedies, MMMW's entire liability shall be the Customer's actual, direct damages such as would be provided in a court of law, not to exceed the charge for service for the item that caused the damages.",
+     "reason": "Limits liability to the charge for service.",
+     "status": "Verified",
+     "start": 14347,
+     "end": 15072,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 14304,
+     "section_end": 15524,
+     "verdict": "confirm",
+     "verdict_reason": "It limits liability to direct damages capped at the service charge and excludes incidental/consequential damages.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:58:20+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 773,
+      "completion_tokens": 71,
+      "reasoning_tokens": 34,
+      "total_tokens": 844
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "MMMW's entire liability and the Customer's sole and exclusive                   remedy for claims related to or arising out of this Agreement                   for any cause and regardless of the form of action, whether in                   contract or tort, including negligence and strict liability,                   shall be the remedies set forth in Section 8, provided that if                   MMMW fails after repeated attempts to perform those remedies,                   MMMW's entire liability shall be the Customer's actual, direct                   damages such as would be provided in a court of law, not to                   exceed the charge for service for the item that caused the                   damages."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The Customer shall not assign or transfer its rights or obligations under this Agreement except with MMMW's prior written consent; any prohibited assignment or transfer shall be void.",
+     "reason": "Requires prior written consent for assignment.",
+     "status": "Verified",
+     "start": 15975,
+     "end": 16212,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 15524,
+     "section_end": 17664,
+     "verdict": "confirm",
+     "verdict_reason": "The passage requires the Customer to obtain MMMW's prior written consent before assigning rights or obligations, fitting the anti-assignment definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:58:20+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 808,
+      "completion_tokens": 68,
+      "reasoning_tokens": 24,
+      "total_tokens": 876
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The Customer shall not assign or transfer its rights or                   obligations under this Agreement except with MMMW's prior                   written consent; any prohibited assignment or transfer shall                   be void."
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be interpreted in accordance with the laws of the State of Indiana.",
+     "reason": "Specifies the governing law.",
+     "status": "Verified",
+     "start": 16229,
+     "end": 16335,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 15524,
+     "section_end": 17786,
+     "verdict": "confirm",
+     "verdict_reason": "The passage explicitly states the agreement is governed by Indiana law, fitting the governing law clause definition.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:58:20+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 806,
+      "completion_tokens": 59,
+      "reasoning_tokens": 22,
+      "total_tokens": 865
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement shall be interpreted in accordance with the                   laws of the State of Indiana."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  },
+  {
+   "title": "TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT",
+   "chars": 17917,
+   "gold": {
+    "Change of Control": [],
+    "Termination for Convenience": [
+     {
+      "start": 7316,
+      "end": 7526
+     }
+    ],
+    "Cap on Liability": [
+     {
+      "start": 10654,
+      "end": 10809
+     },
+     {
+      "start": 10817,
+      "end": 11010
+     }
+    ],
+    "Anti-Assignment": [
+     {
+      "start": 13987,
+      "end": 14128
+     }
+    ],
+    "Governing Law": [
+     {
+      "start": 11232,
+      "end": 11609
+     }
+    ]
+   },
+   "chunks": [
+    {
+     "index": 0,
+     "start": 0,
+     "end": 11615,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:59:20+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2926,
+      "completion_tokens": 390,
+      "reasoning_tokens": 223,
+      "total_tokens": 3316
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    },
+    {
+     "index": 1,
+     "start": 10811,
+     "end": 17917,
+     "status": "ok",
+     "cached": false,
+     "attempts": 1,
+     "usage": {
+      "time": "2026-11-10T11:59:22+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "first_pass_v2",
+      "attempt": 1,
+      "prompt_tokens": 2025,
+      "completion_tokens": 334,
+      "reasoning_tokens": 186,
+      "total_tokens": 2359
+     },
+     "n_findings": 2,
+     "delimiters_removed": 0
+    }
+   ],
+   "raw_findings": [
+    {
+     "chunk": 0,
+     "category": "Termination for Convenience",
+     "model_category": "Termination for Convenience",
+     "quote": "Party B shall have the right to terminate this Agreement in advance without the prior written consent from Party A, by sending a written notice to Party A but Party A may not terminate or rescind this Agreement;",
+     "reason": "Allows Party B to end the contract unilaterally without cause.",
+     "status": "failed_quote",
+     "start": null,
+     "end": null
+    },
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and interpreted pursuant to the laws of the People's Republic of China that are promulgated and are publicly available, provided that the general international business practices shall apply if the laws of the People's Republic of China that are promulgated and are publicly available do not involve any matter in relation to this Agreement.",
+     "reason": "Specifies the law that governs the contract.",
+     "status": "passed",
+     "start": 11232,
+     "end": 11609
+    },
+    {
+     "chunk": 1,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and interpreted pursuant to the laws of the People's Republic of China that are promulgated and are publicly available, provided that the general international business practices shall apply if the laws of the People's Republic of China that are promulgated and are publicly available do not involve any matter in relation to this Agreement.",
+     "reason": "Specifies the governing law for the contract.",
+     "status": "passed",
+     "start": 11232,
+     "end": 11609
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The rights and obligations of each Party under this Agreement shall not be transferred, except for the transfer by Party B to its affiliates.",
+     "reason": "Requires consent/limits assignment, allowing only specific transfer.",
+     "status": "passed",
+     "start": 13987,
+     "end": 14128
+    }
+   ],
+   "findings": [
+    {
+     "chunk": 0,
+     "category": "Governing Law",
+     "model_category": "Governing Law",
+     "quote": "This Agreement shall be governed by and interpreted pursuant to the laws of the People's Republic of China that are promulgated and are publicly available, provided that the general international business practices shall apply if the laws of the People's Republic of China that are promulgated and are publicly available do not involve any matter in relation to this Agreement.",
+     "reason": "Specifies the law that governs the contract.",
+     "status": "Verified",
+     "start": 11232,
+     "end": 11609,
+     "merged_from_chunks": [
+      0,
+      1
+     ],
+     "section_start": 11212,
+     "section_end": 11615,
+     "verdict": "confirm",
+     "verdict_reason": "It specifies which jurisdiction's law governs the agreement's interpretation.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:59:22+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 527,
+      "completion_tokens": 41,
+      "reasoning_tokens": 11,
+      "total_tokens": 568
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "This Agreement shall be governed by and interpreted pursuant to the laws of the People's Republic of China that are promulgated and are publicly available, provided that the general international business practices shall apply if the laws of the People's Republic of China that are promulgated and are publicly available do not involve any matter in relation to this Agreement."
+    },
+    {
+     "chunk": 1,
+     "category": "Anti-Assignment",
+     "model_category": "Anti-Assignment",
+     "quote": "The rights and obligations of each Party under this Agreement shall not be transferred, except for the transfer by Party B to its affiliates.",
+     "reason": "Requires consent/limits assignment, allowing only specific transfer.",
+     "status": "Verified",
+     "start": 13987,
+     "end": 14128,
+     "merged_from_chunks": [
+      1
+     ],
+     "section_start": 13980,
+     "section_end": 14136,
+     "verdict": "confirm",
+     "verdict_reason": "The passage restricts transfer of rights and obligations, defining when assignment is permitted.",
+     "second_pass_error": null,
+     "second_pass_usage": {
+      "time": "2026-11-10T11:59:23+00:00",
+      "date": "2026-11-10",
+      "model": "openai/gpt-oss-120b",
+      "prompt_version": "second_pass_v1",
+      "attempt": 1,
+      "prompt_tokens": 453,
+      "completion_tokens": 91,
+      "reasoning_tokens": 57,
+      "total_tokens": 544
+     },
+     "second_pass_cached": false,
+     "text_in_contract": "The rights and obligations of each Party under this Agreement shall not be transferred, except for the transfer by Party B to its affiliates."
+    }
+   ],
+   "clauses": [
+    {
+     "category": "Change of Control",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Termination for Convenience",
+     "status": "Needs review",
+     "reasons": [
+      "1 quote(s) failed the quote check"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 1
+    },
+    {
+     "category": "Cap on Liability",
+     "status": "Not found: check",
+     "reasons": [
+      "no finding"
+     ],
+     "n_verified": 0,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Anti-Assignment",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    },
+    {
+     "category": "Governing Law",
+     "status": "Verified",
+     "reasons": [
+      "1 verified finding(s)"
+     ],
+     "n_verified": 1,
+     "n_needs_review": 0,
+     "n_failed_quotes": 0
+    }
+   ],
+   "failed_chunks": [],
+   "errors": []
+  }
+ ]
+}

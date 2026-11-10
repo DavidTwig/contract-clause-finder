@@ -1,0 +1,239 @@
+
+=== eval session 1 started 2026-11-10T11:42:57+00:00 | 0/20 finished, 20 to go | tokens today 41,462 / 200,000
+
+[1/20] AgapeAtpCorp_20191202_10-KA_EX-10.1_11911128_EX-10.1_Supply Agreement
+  Change of Control            Verified           1 verified finding(s)
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[2/20] ArconicRolledProductsCorp_20191217_10-12B_EX-2.7_11923804_EX-2.7_Trademark License Agreeme
+  Change of Control            Verified           1 verified finding(s)
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[3/20] BerkshireHillsBancorpInc_20120809_10-Q_EX-10.16_7708169_EX-10.16_Endorsement Agreement
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           2 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[4/20] CYBERIANOUTPOSTINC_07_09_1998-EX-10.13-PROMOTION AGREEMENT
+    tokens: prompt 634, completion 69 (reasoning 39) | today 42,165 / 200,000
+    tokens: prompt 560, completion 72 (reasoning 33) | today 42,797 / 200,000
+    tokens: prompt 537, completion 62 (reasoning 25) | today 43,396 / 200,000
+    tokens: prompt 462, completion 53 (reasoning 16) | today 43,911 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Verified           1 verified finding(s)
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[5/20] CardlyticsInc_20180112_S-1_EX-10.16_11002987_EX-10.16_Maintenance Agreement3
+    tokens: prompt 1,067, completion 22 (reasoning 7) | today 45,000 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Not found: check   no finding
+  Governing Law                Not found: check   no finding
+
+[6/20] EMERALDHEALTHTHERAPEUTICSINC_06_10_2020-EX-4.5-CONSULTING AGREEMENT - DR. GAETANO MORELLO 
+    tokens: prompt 2,853, completion 532 (reasoning 307) | today 48,385 / 200,000
+    throttle: 6,923 tokens in last minute, waiting 58s
+    throttle: 5,588 tokens in last minute, waiting 0s
+    tokens: prompt 2,579, completion 382 (reasoning 242) | today 51,346 / 200,000
+    tokens: prompt 514, completion 53 (reasoning 21) | today 51,913 / 200,000
+    tokens: prompt 495, completion 48 (reasoning 12) | today 52,456 / 200,000
+    tokens: prompt 473, completion 56 (reasoning 17) | today 52,985 / 200,000
+    tokens: prompt 516, completion 47 (reasoning 16) | today 53,548 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Verified           2 verified finding(s)
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[7/20] GALERATHERAPEUTICS,INC_02_14_2020-EX-99.A-JOINT FILING AGREEMENT
+    tokens: prompt 1,655, completion 239 (reasoning 163) | today 55,442 / 200,000
+    throttle: 7,057 tokens in last minute, waiting 59s
+    tokens: prompt 1,202, completion 112 (reasoning 76) | today 56,756 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Not found: check   no finding
+  Governing Law                Not found: check   no finding
+
+[8/20] GSITECHNOLOGYINC_11_16_2009-EX-10.2-INTELLECTUAL PROPERTY AGREEMENT between SONY ELECTRONI
+    tokens: prompt 2,952, completion 102 (reasoning 87) | today 59,810 / 200,000
+    tokens: prompt 2,180, completion 62 (reasoning 47) | today 62,052 / 200,000
+    throttle: 6,610 tokens in last minute, waiting 59s
+    throttle: 5,296 tokens in last minute, waiting 1s
+    tokens: prompt 2,695, completion 77 (reasoning 62) | today 64,824 / 200,000
+    tokens: prompt 2,789, completion 1,100 (reasoning 644) | today 68,713 / 200,000
+    throttle: 6,661 tokens in last minute, waiting 58s
+    tokens: prompt 1,965, completion 59 (reasoning 44) | today 70,737 / 200,000
+    tokens: prompt 836, completion 48 (reasoning 11) | today 71,621 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Needs review       1 quote(s) failed the quote check
+  Anti-Assignment              Needs review       1 quote(s) failed the quote check
+  Governing Law                Verified           1 verified finding(s)
+
+[9/20] HERTZGLOBALHOLDINGS,INC_07_07_2016-EX-10.4-INTELLECTUAL PROPERTY AGREEMENT
+    throttle: 6,797 tokens in last minute, waiting 2s
+    tokens: prompt 3,192, completion 53 (reasoning 38) | today 74,866 / 200,000
+    throttle: 6,153 tokens in last minute, waiting 58s
+    tokens: prompt 2,970, completion 111 (reasoning 96) | today 77,947 / 200,000
+    throttle: 6,326 tokens in last minute, waiting 2s
+    tokens: prompt 3,101, completion 492 (reasoning 304) | today 81,540 / 200,000
+    throttle: 6,674 tokens in last minute, waiting 57s
+    tokens: prompt 1,114, completion 52 (reasoning 19) | today 82,706 / 200,000
+    tokens: prompt 1,141, completion 63 (reasoning 21) | today 83,910 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[10/20] HPILHOLDING_01_07_2015-EX-99.1-COOPERATION AGREEMENT
+    throttle: 5,963 tokens in last minute, waiting 3s
+    tokens: prompt 2,437, completion 78 (reasoning 63) | today 86,425 / 200,000
+    throttle: 4,885 tokens in last minute, waiting 57s
+    tokens: prompt 2,810, completion 263 (reasoning 103) | today 89,498 / 200,000
+    tokens: prompt 893, completion 51 (reasoning 16) | today 90,442 / 200,000
+    tokens: prompt 754, completion 85 (reasoning 51) | today 91,281 / 200,000
+    throttle: 7,371 tokens in last minute, waiting 2s
+    tokens: prompt 802, completion 85 (reasoning 53) | today 92,168 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[11/20] MphaseTechnologiesInc_20030911_10-K_EX-10.15_1560667_EX-10.15_Co-Branding Agreement
+    throttle: 5,743 tokens in last minute, waiting 57s
+    tokens: prompt 2,408, completion 450 (reasoning 209) | today 95,026 / 200,000
+    tokens: prompt 505, completion 67 (reasoning 34) | today 95,598 / 200,000
+    tokens: prompt 537, completion 58 (reasoning 33) | today 96,193 / 200,000
+    tokens: prompt 504, completion 58 (reasoning 21) | today 96,755 / 200,000
+    tokens: prompt 436, completion 55 (reasoning 23) | today 97,246 / 200,000
+    tokens: prompt 439, completion 36 (reasoning 7) | today 97,721 / 200,000
+  Change of Control            Verified           1 verified finding(s)
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Verified           1 verified finding(s)
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[12/20] NOVOINTEGRATEDSCIENCES,INC_12_23_2019-EX-10.1-JOINT VENTURE AGREEMENT
+    throttle: 5,553 tokens in last minute, waiting 59s
+    tokens: prompt 2,685, completion 50 (reasoning 35) | today 100,456 / 200,000
+    tokens: prompt 2,927, completion 376 (reasoning 237) | today 103,759 / 200,000
+    throttle: 6,038 tokens in last minute, waiting 58s
+    tokens: prompt 1,311, completion 64 (reasoning 49) | today 105,134 / 200,000
+    tokens: prompt 842, completion 173 (reasoning 131) | today 106,149 / 200,000
+    tokens: prompt 980, completion 116 (reasoning 79) | today 107,245 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           2 verified finding(s)
+  Governing Law                Not found: check   no finding
+
+[13/20] ONEMAINHOLDINGS,INC_02_20_2020-EX-99.D-JOINT FILING AGREEMENT
+    throttle: 6,789 tokens in last minute, waiting 1s
+    tokens: prompt 2,345, completion 28 (reasoning 13) | today 109,618 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Not found: check   no finding
+  Governing Law                Not found: check   no finding
+
+[14/20] PANDIONTHERAPEUTICSHOLDCOLLC_05_22_2020-EX-10.17-CONSULTING AGREEMENT
+    throttle: 5,859 tokens in last minute, waiting 58s
+    throttle: 4,484 tokens in last minute, waiting 1s
+    tokens: prompt 2,482, completion 138 (reasoning 84) | today 112,238 / 200,000
+    throttle: 4,993 tokens in last minute, waiting 1s
+    tokens: prompt 2,802, completion 206 (reasoning 56) | today 115,246 / 200,000
+    tokens: prompt 1,287, completion 402 (reasoning 230) | today 116,935 / 200,000
+    throttle: 7,317 tokens in last minute, waiting 57s
+    tokens: prompt 666, completion 94 (reasoning 52) | today 117,695 / 200,000
+    tokens: prompt 553, completion 57 (reasoning 20) | today 118,305 / 200,000
+    tokens: prompt 482, completion 40 (reasoning 12) | today 118,827 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[15/20] PRECIGEN,INC_01_22_2020-EX-99.1-JOINT FILING AGREEMENT
+    throttle: 6,589 tokens in last minute, waiting 1s
+    tokens: prompt 949, completion 22 (reasoning 7) | today 119,798 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Not found: check   no finding
+  Governing Law                Not found: check   no finding
+
+[16/20] PRIMEENERGYRESOURCESCORP_04_02_2007-EX-10.28-COMPLETION AND LIQUIDITY MAINTENANCE AGREEMEN
+    tokens: prompt 1,756, completion 214 (reasoning 130) | today 121,768 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Not found: check   no finding
+  Governing Law                Needs review       1 quote(s) failed the quote check
+
+[17/20] PcquoteComInc_19990721_S-1A_EX-10.11_6377149_EX-10.11_Co-Branding Agreement1
+    throttle: 4,833 tokens in last minute, waiting 58s
+    tokens: prompt 3,185, completion 462 (reasoning 162) | today 125,415 / 200,000
+    throttle: 6,588 tokens in last minute, waiting 1s
+    throttle: 5,617 tokens in last minute, waiting 1s
+    tokens: prompt 2,453, completion 171 (reasoning 58) | today 128,039 / 200,000
+    tokens: prompt 544, completion 83 (reasoning 52) | today 128,666 / 200,000
+    tokens: prompt 850, completion 60 (reasoning 24) | today 129,576 / 200,000
+    throttle: 7,808 tokens in last minute, waiting 58s
+    tokens: prompt 472, completion 61 (reasoning 23) | today 130,109 / 200,000
+    tokens: prompt 534, completion 60 (reasoning 25) | today 130,703 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Verified           1 verified finding(s)
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[18/20] SPIENERGYCO,LTD_07_10_2014-EX-10-Cooperation Agreement of 50MWp Photovoltaic Grid-connecte
+    tokens: prompt 1,187, completion 20 (reasoning 5) | today 131,910 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Not found: check   no finding
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Not found: check   no finding
+  Governing Law                Not found: check   no finding
+
+[19/20] TRIZETTOGROUPINC_08_18_1999-EX-10.17-TECHNICAL INFRASTRUCTURE MAINTENANCE AGREEMENT
+    throttle: 6,495 tokens in last minute, waiting 1s
+    tokens: prompt 2,665, completion 229 (reasoning 157) | today 134,804 / 200,000
+    throttle: 5,228 tokens in last minute, waiting 58s
+    tokens: prompt 1,986, completion 338 (reasoning 109) | today 137,128 / 200,000
+    tokens: prompt 870, completion 96 (reasoning 64) | today 138,094 / 200,000
+    tokens: prompt 773, completion 71 (reasoning 34) | today 138,938 / 200,000
+    tokens: prompt 808, completion 68 (reasoning 24) | today 139,814 / 200,000
+    tokens: prompt 806, completion 59 (reasoning 22) | today 140,679 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Verified           1 verified finding(s)
+  Cap on Liability             Verified           1 verified finding(s)
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+[20/20] TUNIUCORP_03_06_2014-EX-10-COOPERATION AGREEMENT
+    throttle: 5,875 tokens in last minute, waiting 59s
+    tokens: prompt 2,926, completion 390 (reasoning 223) | today 143,995 / 200,000
+    tokens: prompt 2,025, completion 334 (reasoning 186) | today 146,354 / 200,000
+    tokens: prompt 527, completion 41 (reasoning 11) | today 146,922 / 200,000
+    tokens: prompt 453, completion 91 (reasoning 57) | today 147,466 / 200,000
+  Change of Control            Not found: check   no finding
+  Termination for Convenience  Needs review       1 quote(s) failed the quote check
+  Cap on Liability             Not found: check   no finding
+  Anti-Assignment              Verified           1 verified finding(s)
+  Governing Law                Verified           1 verified finding(s)
+
+=== session end 2026-11-10T11:59:23+00:00 | 20/20 finished | complete=True | not finished (connection) 0 | invalid model replies 0 | tokens today 147,466
